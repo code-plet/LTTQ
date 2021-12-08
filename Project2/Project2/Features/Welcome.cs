@@ -75,5 +75,11 @@ namespace Project2.Features
             QuanLyNguoiDung quanLy = new QuanLyNguoiDung();
             quanLy.Show();
         }
+
+        private void btnHopdong_Click(object sender, EventArgs e)
+        {
+            HopDong hopDong = new HopDong();
+            hopDong.Show();
+        }
     }
 }

@@ -64,6 +64,12 @@
     <Compile Include="Features\ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Features\HopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\HopDong.Designer.cs">
+      <DependentUpon>HopDong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features\PhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Features\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\HopDong.resx">
+      <DependentUpon>HopDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Features\PhanQuyen.resx">
       <DependentUpon>PhanQuyen.cs</DependentUpon>

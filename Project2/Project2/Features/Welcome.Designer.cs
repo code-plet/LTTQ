@@ -177,6 +177,7 @@ namespace Project2.Features
             this.btnHopdong.Text = "Hợp Đồng";
             this.btnHopdong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHopdong.UseVisualStyleBackColor = false;
+            this.btnHopdong.Click += new System.EventHandler(this.btnHopdong_Click);
             // 
             // labelTime
             // 
