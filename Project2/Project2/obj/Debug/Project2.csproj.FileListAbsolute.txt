@@ -1,0 +1,17 @@
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\bin\Debug\Project2.exe.config
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\bin\Debug\Project2.exe
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\bin\Debug\Project2.pdb
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\bin\Debug\MetroFramework.dll
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.csproj.AssemblyReference.cache
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Properties.Resources.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.csproj.GenerateResource.cache
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.csproj.CoreCompileInputs.cache
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.csproj.CopyComplete
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.exe
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.pdb
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Login.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Features.Welcome.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Features.ChangePassword.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Features.PhanQuyen.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\Project2\Project2\obj\Debug\Project2.Features.QuanLyNguoiDung.resources
