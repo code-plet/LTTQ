@@ -75,5 +75,11 @@ namespace Project2.Features
             QuanLyNguoiDung quanLy = new QuanLyNguoiDung();
             quanLy.Show();
         }
+
+        private void btnTinhluong_Click(object sender, EventArgs e)
+        {
+            TinhLuongMenu tinhluong = new TinhLuongMenu();
+            DialogResult TinhLuongResult = tinhluong.ShowDialog();
+        }
     }
 }

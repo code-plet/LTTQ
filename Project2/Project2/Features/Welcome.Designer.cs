@@ -47,13 +47,13 @@ namespace Project2.Features
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblUsername.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblUsername.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.lblUsername.Location = new System.Drawing.Point(129, 26);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(42, 25);
+            this.lblUsername.Size = new System.Drawing.Size(150, 25);
             this.lblUsername.Style = MetroFramework.MetroColorStyle.Black;
             this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "......";
+            this.lblUsername.Text = "{Insert Username}";
             // 
             // btnLogout
             // 
@@ -107,6 +107,7 @@ namespace Project2.Features
             this.btnTinhluong.Text = "Tính Lương";
             this.btnTinhluong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTinhluong.UseVisualStyleBackColor = false;
+            this.btnTinhluong.Click += new System.EventHandler(this.btnTinhluong_Click);
             // 
             // btnPhanquyen
             // 
@@ -184,7 +185,7 @@ namespace Project2.Features
             this.labelTime.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.Location = new System.Drawing.Point(25, 565);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(57, 26);
+            this.labelTime.Size = new System.Drawing.Size(45, 21);
             this.labelTime.TabIndex = 8;
             this.labelTime.Text = "Timer";
             // 
