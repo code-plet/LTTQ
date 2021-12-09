@@ -31,30 +31,39 @@ namespace Project2.Features
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HopDong));
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.lblBoPhan = new System.Windows.Forms.Label();
-            this.lblTenNV = new System.Windows.Forms.Label();
-            this.lblLoaiHopDong = new System.Windows.Forms.Label();
-            this.lblNgayKy = new System.Windows.Forms.Label();
-            this.lblTrangThai = new System.Windows.Forms.Label();
-            this.cmbBoPhan = new System.Windows.Forms.ComboBox();
-            this.cmbNhanVien = new System.Windows.Forms.ComboBox();
-            this.cmbTenLoaiHopDong = new System.Windows.Forms.ComboBox();
-            this.dtpNgayKy = new System.Windows.Forms.DateTimePicker();
-            this.cbTrangThai = new System.Windows.Forms.CheckBox();
-            this.lblMaHopDong = new System.Windows.Forms.Label();
-            this.lblNgayKetThuc = new System.Windows.Forms.Label();
-            this.lblNgayHetHan = new System.Windows.Forms.Label();
-            this.lblNgayHieuLuc = new System.Windows.Forms.Label();
             this.txtMaHopDong = new System.Windows.Forms.TextBox();
             this.dtpNgayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayHetHan = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayHieuLuc = new System.Windows.Forms.DateTimePicker();
+            this.lblMaHopDong = new System.Windows.Forms.Label();
+            this.lblNgayKetThuc = new System.Windows.Forms.Label();
+            this.lblNgayHetHan = new System.Windows.Forms.Label();
+            this.lblNgayHieuLuc = new System.Windows.Forms.Label();
+            this.cbTrangThai = new System.Windows.Forms.CheckBox();
+            this.dtpNgayKy = new System.Windows.Forms.DateTimePicker();
+            this.cmbTenLoaiHopDong = new System.Windows.Forms.ComboBox();
+            this.cmbNhanVien = new System.Windows.Forms.ComboBox();
+            this.cmbBoPhan = new System.Windows.Forms.ComboBox();
+            this.lblTrangThai = new System.Windows.Forms.Label();
+            this.lblNgayKy = new System.Windows.Forms.Label();
+            this.lblLoaiHopDong = new System.Windows.Forms.Label();
+            this.lblTenNV = new System.Windows.Forms.Label();
+            this.lblBoPhan = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuybo = new System.Windows.Forms.Button();
             this.grdHopDong = new System.Windows.Forms.DataGridView();
+            this.TenBoPhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiHopDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHieuLuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HieuLuc = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.grbThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdHopDong)).BeginInit();
             this.SuspendLayout();
@@ -86,112 +95,44 @@ namespace Project2.Features
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông Tin";
             // 
-            // lblBoPhan
+            // txtMaHopDong
             // 
-            this.lblBoPhan.AutoSize = true;
-            this.lblBoPhan.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoPhan.Location = new System.Drawing.Point(37, 43);
-            this.lblBoPhan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBoPhan.Name = "lblBoPhan";
-            this.lblBoPhan.Size = new System.Drawing.Size(62, 18);
-            this.lblBoPhan.TabIndex = 1;
-            this.lblBoPhan.Text = "Bộ phận";
+            this.txtMaHopDong.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHopDong.Location = new System.Drawing.Point(696, 181);
+            this.txtMaHopDong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaHopDong.Name = "txtMaHopDong";
+            this.txtMaHopDong.Size = new System.Drawing.Size(265, 26);
+            this.txtMaHopDong.TabIndex = 30;
             // 
-            // lblTenNV
+            // dtpNgayKetThuc
             // 
-            this.lblTenNV.AutoSize = true;
-            this.lblTenNV.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenNV.Location = new System.Drawing.Point(37, 89);
-            this.lblTenNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTenNV.Name = "lblTenNV";
-            this.lblTenNV.Size = new System.Drawing.Size(102, 18);
-            this.lblTenNV.TabIndex = 2;
-            this.lblTenNV.Text = "Tên nhân viên";
+            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayKetThuc.Location = new System.Drawing.Point(696, 138);
+            this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
+            this.dtpNgayKetThuc.Size = new System.Drawing.Size(265, 26);
+            this.dtpNgayKetThuc.TabIndex = 29;
             // 
-            // lblLoaiHopDong
+            // dtpNgayHetHan
             // 
-            this.lblLoaiHopDong.AutoSize = true;
-            this.lblLoaiHopDong.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoaiHopDong.Location = new System.Drawing.Point(37, 138);
-            this.lblLoaiHopDong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLoaiHopDong.Name = "lblLoaiHopDong";
-            this.lblLoaiHopDong.Size = new System.Drawing.Size(126, 18);
-            this.lblLoaiHopDong.TabIndex = 3;
-            this.lblLoaiHopDong.Text = "Tên loại hợp đồng";
+            this.dtpNgayHetHan.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayHetHan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayHetHan.Location = new System.Drawing.Point(696, 89);
+            this.dtpNgayHetHan.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayHetHan.Name = "dtpNgayHetHan";
+            this.dtpNgayHetHan.Size = new System.Drawing.Size(265, 26);
+            this.dtpNgayHetHan.TabIndex = 28;
             // 
-            // lblNgayKy
+            // dtpNgayHieuLuc
             // 
-            this.lblNgayKy.AutoSize = true;
-            this.lblNgayKy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayKy.Location = new System.Drawing.Point(37, 187);
-            this.lblNgayKy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNgayKy.Name = "lblNgayKy";
-            this.lblNgayKy.Size = new System.Drawing.Size(62, 18);
-            this.lblNgayKy.TabIndex = 4;
-            this.lblNgayKy.Text = "Ngày ký";
-            // 
-            // lblTrangThai
-            // 
-            this.lblTrangThai.AutoSize = true;
-            this.lblTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangThai.Location = new System.Drawing.Point(37, 231);
-            this.lblTrangThai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(75, 18);
-            this.lblTrangThai.TabIndex = 17;
-            this.lblTrangThai.Text = "Trạng thái";
-            // 
-            // cmbBoPhan
-            // 
-            this.cmbBoPhan.FormattingEnabled = true;
-            this.cmbBoPhan.Location = new System.Drawing.Point(171, 37);
-            this.cmbBoPhan.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbBoPhan.Name = "cmbBoPhan";
-            this.cmbBoPhan.Size = new System.Drawing.Size(265, 24);
-            this.cmbBoPhan.TabIndex = 18;
-            this.cmbBoPhan.SelectedIndexChanged += new System.EventHandler(this.cmbBoPhan_SelectedIndexChanged);
-            // 
-            // cmbNhanVien
-            // 
-            this.cmbNhanVien.FormattingEnabled = true;
-            this.cmbNhanVien.Location = new System.Drawing.Point(171, 89);
-            this.cmbNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbNhanVien.Name = "cmbNhanVien";
-            this.cmbNhanVien.Size = new System.Drawing.Size(265, 24);
-            this.cmbNhanVien.TabIndex = 19;
-            // 
-            // cmbTenLoaiHopDong
-            // 
-            this.cmbTenLoaiHopDong.FormattingEnabled = true;
-            this.cmbTenLoaiHopDong.Location = new System.Drawing.Point(171, 138);
-            this.cmbTenLoaiHopDong.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbTenLoaiHopDong.Name = "cmbTenLoaiHopDong";
-            this.cmbTenLoaiHopDong.Size = new System.Drawing.Size(265, 24);
-            this.cmbTenLoaiHopDong.TabIndex = 20;
-            // 
-            // dtpNgayKy
-            // 
-            this.dtpNgayKy.CalendarFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayKy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayKy.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayKy.Location = new System.Drawing.Point(171, 181);
-            this.dtpNgayKy.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNgayKy.Name = "dtpNgayKy";
-            this.dtpNgayKy.Size = new System.Drawing.Size(265, 26);
-            this.dtpNgayKy.TabIndex = 21;
-            // 
-            // cbTrangThai
-            // 
-            this.cbTrangThai.AutoSize = true;
-            this.cbTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTrangThai.Location = new System.Drawing.Point(171, 231);
-            this.cbTrangThai.Margin = new System.Windows.Forms.Padding(4);
-            this.cbTrangThai.Name = "cbTrangThai";
-            this.cbTrangThai.Size = new System.Drawing.Size(101, 22);
-            this.cbTrangThai.TabIndex = 22;
-            this.cbTrangThai.Text = "Có hiệu lực";
-            this.cbTrangThai.UseVisualStyleBackColor = true;
-            this.cbTrangThai.CheckedChanged += new System.EventHandler(this.cbTrangThai_CheckedChanged);
+            this.dtpNgayHieuLuc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayHieuLuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayHieuLuc.Location = new System.Drawing.Point(696, 37);
+            this.dtpNgayHieuLuc.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayHieuLuc.Name = "dtpNgayHieuLuc";
+            this.dtpNgayHieuLuc.Size = new System.Drawing.Size(265, 26);
+            this.dtpNgayHieuLuc.TabIndex = 27;
             // 
             // lblMaHopDong
             // 
@@ -237,44 +178,112 @@ namespace Project2.Features
             this.lblNgayHieuLuc.TabIndex = 23;
             this.lblNgayHieuLuc.Text = "Ngày hiệu lực";
             // 
-            // txtMaHopDong
+            // cbTrangThai
             // 
-            this.txtMaHopDong.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHopDong.Location = new System.Drawing.Point(696, 181);
-            this.txtMaHopDong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaHopDong.Name = "txtMaHopDong";
-            this.txtMaHopDong.Size = new System.Drawing.Size(265, 26);
-            this.txtMaHopDong.TabIndex = 30;
+            this.cbTrangThai.AutoSize = true;
+            this.cbTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTrangThai.Location = new System.Drawing.Point(171, 231);
+            this.cbTrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(101, 22);
+            this.cbTrangThai.TabIndex = 22;
+            this.cbTrangThai.Text = "Có hiệu lực";
+            this.cbTrangThai.UseVisualStyleBackColor = true;
+            this.cbTrangThai.CheckedChanged += new System.EventHandler(this.cbTrangThai_CheckedChanged);
             // 
-            // dtpNgayKetThuc
+            // dtpNgayKy
             // 
-            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayKetThuc.Location = new System.Drawing.Point(696, 138);
-            this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
-            this.dtpNgayKetThuc.Size = new System.Drawing.Size(265, 26);
-            this.dtpNgayKetThuc.TabIndex = 29;
+            this.dtpNgayKy.CalendarFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKy.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayKy.Location = new System.Drawing.Point(171, 181);
+            this.dtpNgayKy.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayKy.Name = "dtpNgayKy";
+            this.dtpNgayKy.Size = new System.Drawing.Size(265, 26);
+            this.dtpNgayKy.TabIndex = 21;
             // 
-            // dtpNgayHetHan
+            // cmbTenLoaiHopDong
             // 
-            this.dtpNgayHetHan.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayHetHan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayHetHan.Location = new System.Drawing.Point(696, 89);
-            this.dtpNgayHetHan.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNgayHetHan.Name = "dtpNgayHetHan";
-            this.dtpNgayHetHan.Size = new System.Drawing.Size(265, 26);
-            this.dtpNgayHetHan.TabIndex = 28;
+            this.cmbTenLoaiHopDong.FormattingEnabled = true;
+            this.cmbTenLoaiHopDong.Location = new System.Drawing.Point(171, 138);
+            this.cmbTenLoaiHopDong.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTenLoaiHopDong.Name = "cmbTenLoaiHopDong";
+            this.cmbTenLoaiHopDong.Size = new System.Drawing.Size(265, 24);
+            this.cmbTenLoaiHopDong.TabIndex = 20;
             // 
-            // dtpNgayHieuLuc
+            // cmbNhanVien
             // 
-            this.dtpNgayHieuLuc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayHieuLuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayHieuLuc.Location = new System.Drawing.Point(696, 37);
-            this.dtpNgayHieuLuc.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNgayHieuLuc.Name = "dtpNgayHieuLuc";
-            this.dtpNgayHieuLuc.Size = new System.Drawing.Size(265, 26);
-            this.dtpNgayHieuLuc.TabIndex = 27;
+            this.cmbNhanVien.FormattingEnabled = true;
+            this.cmbNhanVien.Location = new System.Drawing.Point(171, 89);
+            this.cmbNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbNhanVien.Name = "cmbNhanVien";
+            this.cmbNhanVien.Size = new System.Drawing.Size(265, 24);
+            this.cmbNhanVien.TabIndex = 19;
+            // 
+            // cmbBoPhan
+            // 
+            this.cmbBoPhan.FormattingEnabled = true;
+            this.cmbBoPhan.Location = new System.Drawing.Point(171, 37);
+            this.cmbBoPhan.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbBoPhan.Name = "cmbBoPhan";
+            this.cmbBoPhan.Size = new System.Drawing.Size(265, 24);
+            this.cmbBoPhan.TabIndex = 18;
+            this.cmbBoPhan.SelectedIndexChanged += new System.EventHandler(this.cmbBoPhan_SelectedIndexChanged);
+            // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.AutoSize = true;
+            this.lblTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.Location = new System.Drawing.Point(37, 231);
+            this.lblTrangThai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(75, 18);
+            this.lblTrangThai.TabIndex = 17;
+            this.lblTrangThai.Text = "Trạng thái";
+            // 
+            // lblNgayKy
+            // 
+            this.lblNgayKy.AutoSize = true;
+            this.lblNgayKy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayKy.Location = new System.Drawing.Point(37, 187);
+            this.lblNgayKy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNgayKy.Name = "lblNgayKy";
+            this.lblNgayKy.Size = new System.Drawing.Size(62, 18);
+            this.lblNgayKy.TabIndex = 4;
+            this.lblNgayKy.Text = "Ngày ký";
+            // 
+            // lblLoaiHopDong
+            // 
+            this.lblLoaiHopDong.AutoSize = true;
+            this.lblLoaiHopDong.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoaiHopDong.Location = new System.Drawing.Point(37, 138);
+            this.lblLoaiHopDong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLoaiHopDong.Name = "lblLoaiHopDong";
+            this.lblLoaiHopDong.Size = new System.Drawing.Size(126, 18);
+            this.lblLoaiHopDong.TabIndex = 3;
+            this.lblLoaiHopDong.Text = "Tên loại hợp đồng";
+            // 
+            // lblTenNV
+            // 
+            this.lblTenNV.AutoSize = true;
+            this.lblTenNV.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenNV.Location = new System.Drawing.Point(37, 89);
+            this.lblTenNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTenNV.Name = "lblTenNV";
+            this.lblTenNV.Size = new System.Drawing.Size(102, 18);
+            this.lblTenNV.TabIndex = 2;
+            this.lblTenNV.Text = "Tên nhân viên";
+            // 
+            // lblBoPhan
+            // 
+            this.lblBoPhan.AutoSize = true;
+            this.lblBoPhan.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBoPhan.Location = new System.Drawing.Point(37, 43);
+            this.lblBoPhan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBoPhan.Name = "lblBoPhan";
+            this.lblBoPhan.Size = new System.Drawing.Size(62, 18);
+            this.lblBoPhan.TabIndex = 1;
+            this.lblBoPhan.Text = "Bộ phận";
             // 
             // btnThem
             // 
@@ -343,12 +352,106 @@ namespace Project2.Features
             this.grdHopDong.AllowUserToOrderColumns = true;
             this.grdHopDong.AllowUserToResizeRows = false;
             this.grdHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdHopDong.Location = new System.Drawing.Point(14, 407);
+            this.grdHopDong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TenBoPhan,
+            this.TenNV,
+            this.MaHD,
+            this.LoaiHopDong,
+            this.NgayKy,
+            this.NgayHieuLuc,
+            this.NgayHetHan,
+            this.NgayKetThuc,
+            this.HieuLuc});
+            this.grdHopDong.Location = new System.Drawing.Point(14, 399);
             this.grdHopDong.Name = "grdHopDong";
+            this.grdHopDong.ReadOnly = true;
             this.grdHopDong.RowHeadersWidth = 51;
             this.grdHopDong.RowTemplate.Height = 24;
             this.grdHopDong.Size = new System.Drawing.Size(977, 168);
             this.grdHopDong.TabIndex = 6;
+            // 
+            // TenBoPhan
+            // 
+            this.TenBoPhan.DataPropertyName = "TenBoPhan";
+            this.TenBoPhan.HeaderText = "Tên Bộ Phận";
+            this.TenBoPhan.MinimumWidth = 6;
+            this.TenBoPhan.Name = "TenBoPhan";
+            this.TenBoPhan.ReadOnly = true;
+            this.TenBoPhan.Width = 125;
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên Nhân Viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
+            this.TenNV.Width = 125;
+            // 
+            // MaHD
+            // 
+            this.MaHD.DataPropertyName = "MaHopDong";
+            this.MaHD.HeaderText = "Mã Hợp Đồng";
+            this.MaHD.MinimumWidth = 6;
+            this.MaHD.Name = "MaHD";
+            this.MaHD.ReadOnly = true;
+            this.MaHD.Width = 125;
+            // 
+            // LoaiHopDong
+            // 
+            this.LoaiHopDong.DataPropertyName = "TenLoaiHopDong";
+            this.LoaiHopDong.HeaderText = "Tên Loại Hợp Đồng";
+            this.LoaiHopDong.MinimumWidth = 6;
+            this.LoaiHopDong.Name = "LoaiHopDong";
+            this.LoaiHopDong.ReadOnly = true;
+            this.LoaiHopDong.Width = 125;
+            // 
+            // NgayKy
+            // 
+            this.NgayKy.DataPropertyName = "NgayKy";
+            this.NgayKy.HeaderText = "Ngày Ký";
+            this.NgayKy.MinimumWidth = 6;
+            this.NgayKy.Name = "NgayKy";
+            this.NgayKy.ReadOnly = true;
+            this.NgayKy.Width = 125;
+            // 
+            // NgayHieuLuc
+            // 
+            this.NgayHieuLuc.DataPropertyName = "NgayHieuLuc";
+            this.NgayHieuLuc.HeaderText = "Ngày Hiệu Lực";
+            this.NgayHieuLuc.MinimumWidth = 6;
+            this.NgayHieuLuc.Name = "NgayHieuLuc";
+            this.NgayHieuLuc.ReadOnly = true;
+            this.NgayHieuLuc.Width = 125;
+            // 
+            // NgayHetHan
+            // 
+            this.NgayHetHan.DataPropertyName = "NgayHetHan";
+            this.NgayHetHan.HeaderText = "Ngày Hết Hạn";
+            this.NgayHetHan.MinimumWidth = 6;
+            this.NgayHetHan.Name = "NgayHetHan";
+            this.NgayHetHan.ReadOnly = true;
+            this.NgayHetHan.Width = 125;
+            // 
+            // NgayKetThuc
+            // 
+            this.NgayKetThuc.DataPropertyName = "NgayKetThuc";
+            this.NgayKetThuc.HeaderText = "Ngày Kết Thúc";
+            this.NgayKetThuc.MinimumWidth = 6;
+            this.NgayKetThuc.Name = "NgayKetThuc";
+            this.NgayKetThuc.ReadOnly = true;
+            this.NgayKetThuc.Width = 125;
+            // 
+            // HieuLuc
+            // 
+            this.HieuLuc.DataPropertyName = "TrangThai";
+            this.HieuLuc.HeaderText = "Hiệu Lực";
+            this.HieuLuc.MinimumWidth = 6;
+            this.HieuLuc.Name = "HieuLuc";
+            this.HieuLuc.ReadOnly = true;
+            this.HieuLuc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.HieuLuc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.HieuLuc.Width = 125;
             // 
             // HopDong
             // 
@@ -404,5 +507,14 @@ namespace Project2.Features
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuybo;
         private System.Windows.Forms.DataGridView grdHopDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenBoPhan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiHopDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHieuLuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHetHan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKetThuc;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn HieuLuc;
     }
 }

@@ -160,6 +160,7 @@ namespace Project2.Features
             this.btnHoso.Text = "Hồ Sơ Nhân Viên";
             this.btnHoso.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHoso.UseVisualStyleBackColor = false;
+            this.btnHoso.Click += new System.EventHandler(this.btnHoso_Click);
             // 
             // btnHopdong
             // 

@@ -71,6 +71,11 @@ namespace Project2.Features
             cmbBoPhan.DisplayMember = "TenBoPhan";
             Load_DL();
             Reset();
+
+            grdHopDong.Columns[1].Visible = false;
+            grdHopDong.Columns[2].Visible = false;
+            grdHopDong.Columns[3].Visible = false;          
+            grdHopDong.Columns[11].Visible = false;
         }
 
         private void cmbBoPhan_SelectedIndexChanged(object sender, EventArgs e)

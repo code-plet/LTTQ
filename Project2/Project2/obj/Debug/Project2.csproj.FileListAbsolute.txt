@@ -33,3 +33,4 @@ C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\ob
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.csproj.CopyComplete
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.exe
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.pdb
+C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.Features.HoSo.resources
