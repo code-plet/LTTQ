@@ -160,6 +160,7 @@ namespace Project2.Features
             this.btnHoso.Text = "Hồ Sơ Nhân Viên";
             this.btnHoso.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHoso.UseVisualStyleBackColor = false;
+            this.btnHoso.Click += new System.EventHandler(this.btnHoso_Click);
             // 
             // btnHopdong
             // 
@@ -177,6 +178,7 @@ namespace Project2.Features
             this.btnHopdong.Text = "Hợp Đồng";
             this.btnHopdong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHopdong.UseVisualStyleBackColor = false;
+            this.btnHopdong.Click += new System.EventHandler(this.btnHopdong_Click);
             // 
             // labelTime
             // 
