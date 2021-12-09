@@ -80,6 +80,17 @@ namespace Project2.Features
         {
             TinhLuongMenu tinhluong = new TinhLuongMenu();
             DialogResult TinhLuongResult = tinhluong.ShowDialog();
+
+        private void btnHopdong_Click(object sender, EventArgs e)
+        {
+            HopDong hopDong = new HopDong();
+            hopDong.Show();
+        }
+
+        private void btnHoso_Click(object sender, EventArgs e)
+        {
+            HoSo hoSo = new HoSo();
+            hoSo.Show();
         }
     }
 }

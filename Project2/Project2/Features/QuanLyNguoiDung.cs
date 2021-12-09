@@ -59,7 +59,11 @@ namespace Project2.Features
             cmbBoPhan.ValueMember = "BoPhanID";
             cmbBoPhan.DisplayMember = "TenBoPhan";
             Load_DL();
-            Reset();       
+            Reset();
+
+            grdNguoiDung.Columns[0].Visible = false;           
+            grdNguoiDung.Columns[4].Visible = false;
+            grdNguoiDung.Columns[7].Visible = false;           
         }
 
         private void currentRow_PositionChanged(object sender, EventArgs e)
