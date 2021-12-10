@@ -32,16 +32,16 @@ namespace Project2.Features
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNguoiDung));
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.lblBoPhan = new System.Windows.Forms.Label();
-            this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.lblNhanVien = new System.Windows.Forms.Label();
-            this.lblMatKhau = new System.Windows.Forms.Label();
-            this.cmbBoPhan = new System.Windows.Forms.ComboBox();
-            this.cmbNhanVien = new System.Windows.Forms.ComboBox();
-            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.lblQuanTri = new System.Windows.Forms.Label();
             this.cbQuanTri = new System.Windows.Forms.CheckBox();
+            this.lblQuanTri = new System.Windows.Forms.Label();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.cmbNhanVien = new System.Windows.Forms.ComboBox();
+            this.cmbBoPhan = new System.Windows.Forms.ComboBox();
+            this.lblMatKhau = new System.Windows.Forms.Label();
+            this.lblNhanVien = new System.Windows.Forms.Label();
+            this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.lblBoPhan = new System.Windows.Forms.Label();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
@@ -49,6 +49,9 @@ namespace Project2.Features
             this.btnXoa = new System.Windows.Forms.Button();
             this.grdNguoiDung = new System.Windows.Forms.DataGridView();
             this.TenBoPhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NhanVienID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BoPhanID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NguoiD12312312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,87 +75,10 @@ namespace Project2.Features
             this.grbThongTin.Controls.Add(this.lblBoPhan);
             this.grbThongTin.Location = new System.Drawing.Point(13, 63);
             this.grbThongTin.Name = "grbThongTin";
-            this.grbThongTin.Size = new System.Drawing.Size(774, 131);
+            this.grbThongTin.Size = new System.Drawing.Size(924, 131);
             this.grbThongTin.TabIndex = 0;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông Tin";
-            // 
-            // lblBoPhan
-            // 
-            this.lblBoPhan.AutoSize = true;
-            this.lblBoPhan.Location = new System.Drawing.Point(37, 34);
-            this.lblBoPhan.Name = "lblBoPhan";
-            this.lblBoPhan.Size = new System.Drawing.Size(62, 17);
-            this.lblBoPhan.TabIndex = 1;
-            this.lblBoPhan.Text = "Bộ Phận";
-            // 
-            // lblTenDangNhap
-            // 
-            this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Location = new System.Drawing.Point(37, 68);
-            this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(109, 17);
-            this.lblTenDangNhap.TabIndex = 3;
-            this.lblTenDangNhap.Text = "Tên Đăng Nhập";
-            // 
-            // lblNhanVien
-            // 
-            this.lblNhanVien.AutoSize = true;
-            this.lblNhanVien.Location = new System.Drawing.Point(436, 34);
-            this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(74, 17);
-            this.lblNhanVien.TabIndex = 4;
-            this.lblNhanVien.Text = "Nhân Viên";
-            // 
-            // lblMatKhau
-            // 
-            this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Location = new System.Drawing.Point(436, 68);
-            this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(68, 17);
-            this.lblMatKhau.TabIndex = 5;
-            this.lblMatKhau.Text = "Mật Khẩu";
-            // 
-            // cmbBoPhan
-            // 
-            this.cmbBoPhan.FormattingEnabled = true;
-            this.cmbBoPhan.Location = new System.Drawing.Point(147, 27);
-            this.cmbBoPhan.Name = "cmbBoPhan";
-            this.cmbBoPhan.Size = new System.Drawing.Size(221, 24);
-            this.cmbBoPhan.TabIndex = 6;
-            this.cmbBoPhan.SelectedIndexChanged += new System.EventHandler(this.cmbBoPhan_SelectedIndexChanged);
-            // 
-            // cmbNhanVien
-            // 
-            this.cmbNhanVien.FormattingEnabled = true;
-            this.cmbNhanVien.Location = new System.Drawing.Point(516, 27);
-            this.cmbNhanVien.Name = "cmbNhanVien";
-            this.cmbNhanVien.Size = new System.Drawing.Size(221, 24);
-            this.cmbNhanVien.TabIndex = 12;
-            // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.Location = new System.Drawing.Point(147, 63);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(221, 22);
-            this.txtTenDangNhap.TabIndex = 13;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Location = new System.Drawing.Point(516, 63);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(221, 22);
-            this.txtMatKhau.TabIndex = 14;
-            // 
-            // lblQuanTri
-            // 
-            this.lblQuanTri.AutoSize = true;
-            this.lblQuanTri.Location = new System.Drawing.Point(37, 100);
-            this.lblQuanTri.Name = "lblQuanTri";
-            this.lblQuanTri.Size = new System.Drawing.Size(64, 17);
-            this.lblQuanTri.TabIndex = 15;
-            this.lblQuanTri.Text = "Quản Trị";
             // 
             // cbQuanTri
             // 
@@ -163,13 +89,90 @@ namespace Project2.Features
             this.cbQuanTri.TabIndex = 16;
             this.cbQuanTri.UseVisualStyleBackColor = true;
             // 
+            // lblQuanTri
+            // 
+            this.lblQuanTri.AutoSize = true;
+            this.lblQuanTri.Location = new System.Drawing.Point(37, 100);
+            this.lblQuanTri.Name = "lblQuanTri";
+            this.lblQuanTri.Size = new System.Drawing.Size(64, 17);
+            this.lblQuanTri.TabIndex = 15;
+            this.lblQuanTri.Text = "Quản Trị";
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Location = new System.Drawing.Point(584, 65);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(267, 22);
+            this.txtMatKhau.TabIndex = 14;
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Location = new System.Drawing.Point(147, 63);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(248, 22);
+            this.txtTenDangNhap.TabIndex = 13;
+            // 
+            // cmbNhanVien
+            // 
+            this.cmbNhanVien.FormattingEnabled = true;
+            this.cmbNhanVien.Location = new System.Drawing.Point(584, 27);
+            this.cmbNhanVien.Name = "cmbNhanVien";
+            this.cmbNhanVien.Size = new System.Drawing.Size(267, 24);
+            this.cmbNhanVien.TabIndex = 12;
+            // 
+            // cmbBoPhan
+            // 
+            this.cmbBoPhan.FormattingEnabled = true;
+            this.cmbBoPhan.Location = new System.Drawing.Point(147, 27);
+            this.cmbBoPhan.Name = "cmbBoPhan";
+            this.cmbBoPhan.Size = new System.Drawing.Size(248, 24);
+            this.cmbBoPhan.TabIndex = 6;
+            this.cmbBoPhan.SelectedIndexChanged += new System.EventHandler(this.cmbBoPhan_SelectedIndexChanged);
+            // 
+            // lblMatKhau
+            // 
+            this.lblMatKhau.AutoSize = true;
+            this.lblMatKhau.Location = new System.Drawing.Point(468, 68);
+            this.lblMatKhau.Name = "lblMatKhau";
+            this.lblMatKhau.Size = new System.Drawing.Size(68, 17);
+            this.lblMatKhau.TabIndex = 5;
+            this.lblMatKhau.Text = "Mật Khẩu";
+            // 
+            // lblNhanVien
+            // 
+            this.lblNhanVien.AutoSize = true;
+            this.lblNhanVien.Location = new System.Drawing.Point(468, 34);
+            this.lblNhanVien.Name = "lblNhanVien";
+            this.lblNhanVien.Size = new System.Drawing.Size(74, 17);
+            this.lblNhanVien.TabIndex = 4;
+            this.lblNhanVien.Text = "Nhân Viên";
+            // 
+            // lblTenDangNhap
+            // 
+            this.lblTenDangNhap.AutoSize = true;
+            this.lblTenDangNhap.Location = new System.Drawing.Point(37, 68);
+            this.lblTenDangNhap.Name = "lblTenDangNhap";
+            this.lblTenDangNhap.Size = new System.Drawing.Size(109, 17);
+            this.lblTenDangNhap.TabIndex = 3;
+            this.lblTenDangNhap.Text = "Tên Đăng Nhập";
+            // 
+            // lblBoPhan
+            // 
+            this.lblBoPhan.AutoSize = true;
+            this.lblBoPhan.Location = new System.Drawing.Point(37, 34);
+            this.lblBoPhan.Name = "lblBoPhan";
+            this.lblBoPhan.Size = new System.Drawing.Size(62, 17);
+            this.lblBoPhan.TabIndex = 1;
+            this.lblBoPhan.Text = "Bộ Phận";
+            // 
             // btnThemMoi
             // 
             this.btnThemMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemMoi.Location = new System.Drawing.Point(13, 209);
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(106, 36);
+            this.btnThemMoi.Size = new System.Drawing.Size(135, 36);
             this.btnThemMoi.TabIndex = 1;
             this.btnThemMoi.Text = "Thêm Mới";
             this.btnThemMoi.UseVisualStyleBackColor = true;
@@ -179,9 +182,9 @@ namespace Project2.Features
             // 
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(182, 209);
+            this.btnSua.Location = new System.Drawing.Point(220, 209);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(106, 36);
+            this.btnSua.Size = new System.Drawing.Size(141, 36);
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -191,9 +194,9 @@ namespace Project2.Features
             // 
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Location = new System.Drawing.Point(351, 209);
+            this.btnCapNhat.Location = new System.Drawing.Point(426, 209);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(106, 36);
+            this.btnCapNhat.Size = new System.Drawing.Size(143, 36);
             this.btnCapNhat.TabIndex = 3;
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -203,9 +206,9 @@ namespace Project2.Features
             // 
             this.btnHuyBo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuyBo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyBo.Location = new System.Drawing.Point(681, 209);
+            this.btnHuyBo.Location = new System.Drawing.Point(815, 209);
             this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(106, 36);
+            this.btnHuyBo.Size = new System.Drawing.Size(122, 36);
             this.btnHuyBo.TabIndex = 4;
             this.btnHuyBo.Text = "Hủy Bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = true;
@@ -215,9 +218,9 @@ namespace Project2.Features
             // 
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(516, 209);
+            this.btnXoa.Location = new System.Drawing.Point(635, 209);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(106, 36);
+            this.btnXoa.Size = new System.Drawing.Size(130, 36);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -233,6 +236,9 @@ namespace Project2.Features
             this.grdNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdNguoiDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenBoPhan,
+            this.NhanVienID,
+            this.BoPhanID,
+            this.NguoiD12312312,
             this.MaNV,
             this.TenNV,
             this.TenDangNhap,
@@ -251,7 +257,7 @@ namespace Project2.Features
             this.grdNguoiDung.ReadOnly = true;
             this.grdNguoiDung.RowHeadersWidth = 51;
             this.grdNguoiDung.RowTemplate.Height = 24;
-            this.grdNguoiDung.Size = new System.Drawing.Size(774, 176);
+            this.grdNguoiDung.Size = new System.Drawing.Size(924, 311);
             this.grdNguoiDung.TabIndex = 6;
             this.grdNguoiDung.SelectionChanged += new System.EventHandler(this.grdNguoiDung_SelectionChanged);
             // 
@@ -262,6 +268,34 @@ namespace Project2.Features
             this.TenBoPhan.MinimumWidth = 6;
             this.TenBoPhan.Name = "TenBoPhan";
             this.TenBoPhan.ReadOnly = true;
+            this.TenBoPhan.Width = 125;
+            // 
+            // NhanVienID
+            // 
+            this.NhanVienID.DataPropertyName = "NhanVienID";
+            this.NhanVienID.HeaderText = "Nhân Viên ID";
+            this.NhanVienID.MinimumWidth = 6;
+            this.NhanVienID.Name = "NhanVienID";
+            this.NhanVienID.ReadOnly = true;
+            this.NhanVienID.Width = 125;
+            // 
+            // BoPhanID
+            // 
+            this.BoPhanID.DataPropertyName = "BoPhanID";
+            this.BoPhanID.HeaderText = "Bộ Phận ID";
+            this.BoPhanID.MinimumWidth = 6;
+            this.BoPhanID.Name = "BoPhanID";
+            this.BoPhanID.ReadOnly = true;
+            this.BoPhanID.Width = 125;
+            // 
+            // NguoiD12312312
+            // 
+            this.NguoiD12312312.DataPropertyName = "NguoiDungID";
+            this.NguoiD12312312.HeaderText = "Người dùng ID";
+            this.NguoiD12312312.MinimumWidth = 6;
+            this.NguoiD12312312.Name = "NguoiD12312312";
+            this.NguoiD12312312.ReadOnly = true;
+            this.NguoiD12312312.Width = 125;
             // 
             // MaNV
             // 
@@ -270,6 +304,7 @@ namespace Project2.Features
             this.MaNV.MinimumWidth = 6;
             this.MaNV.Name = "MaNV";
             this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 125;
             // 
             // TenNV
             // 
@@ -313,7 +348,7 @@ namespace Project2.Features
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(953, 582);
             this.Controls.Add(this.grdNguoiDung);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuyBo);
@@ -356,6 +391,9 @@ namespace Project2.Features
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.DataGridView grdNguoiDung;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenBoPhan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NhanVienID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BoPhanID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NguoiD12312312;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDangNhap;
