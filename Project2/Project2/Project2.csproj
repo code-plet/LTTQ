@@ -82,6 +82,12 @@
     <Compile Include="Features\CVBP.Designer.cs">
       <DependentUpon>CVBP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Features\DanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\DanhMuc.Designer.cs">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features\HopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,18 @@
     </Compile>
     <Compile Include="Features\QuanLyNguoiDung.Designer.cs">
       <DependentUpon>QuanLyNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ThemBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ThemBoPhan.Designer.cs">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ThemLoaiHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ThemLoaiHD.Designer.cs">
+      <DependentUpon>ThemLoaiHD.cs</DependentUpon>
     </Compile>
     <Compile Include="Features\Welcome.cs">
       <SubType>Form</SubType>
@@ -132,6 +150,9 @@
     <EmbeddedResource Include="Features\CVBP.resx">
       <DependentUpon>CVBP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Features\DanhMuc.resx">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Features\HopDong.resx">
       <DependentUpon>HopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Features\QuanLyNguoiDung.resx">
       <DependentUpon>QuanLyNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\ThemBoPhan.resx">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\ThemLoaiHD.resx">
+      <DependentUpon>ThemLoaiHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Features\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
@@ -176,5 +203,6 @@
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
