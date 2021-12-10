@@ -41,9 +41,8 @@ namespace Project2.Features
             {
                 this.Close();
                 Login login = new Login();
-                login.Show();
-            }
-            
+                login.ShowDialog();
+            }         
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -60,32 +59,38 @@ namespace Project2.Features
             else
             {
                 PhanQuyen phanQuyen = new PhanQuyen();
-                phanQuyen.Show();
+                phanQuyen.ShowDialog();
             }    
         }
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {          
                 ChangePassword changePassword = new ChangePassword();
-                changePassword.Show();              
+                changePassword.ShowDialog();              
         }
 
         private void btnQuanly_Click(object sender, EventArgs e)
         {
             QuanLyNguoiDung quanLy = new QuanLyNguoiDung();
-            quanLy.Show();
+            quanLy.ShowDialog();
         }
 
         private void btnHopdong_Click(object sender, EventArgs e)
         {
             HopDong hopDong = new HopDong();
-            hopDong.Show();
+            hopDong.ShowDialog();
         }
 
         private void btnHoso_Click(object sender, EventArgs e)
         {
             HoSo hoSo = new HoSo();
-            hoSo.Show();
+            hoSo.ShowDialog();
+        }
+
+        private void btnCVBP_Click(object sender, EventArgs e)
+        {
+            CVBP cVBP = new CVBP();
+            cVBP.ShowDialog();
         }
     }
 }

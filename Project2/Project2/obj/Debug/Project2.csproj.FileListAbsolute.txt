@@ -34,3 +34,6 @@ C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\ob
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.exe
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.pdb
 C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.Features.HoSo.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.Features.BoPhan.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.Features.ChucVu.resources
+C:\Users\Toris\source\repos\Đồ án LTTQ\GITHUB\LTTQ\LTTQ\Project2\Project2\obj\Debug\Project2.Features.CVBP.resources
