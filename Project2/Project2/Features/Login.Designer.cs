@@ -44,7 +44,7 @@ namespace Project2
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.Location = new System.Drawing.Point(50, 94);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(84, 20);
+            this.metroLabel1.Size = new System.Drawing.Size(80, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Username:";
             // 
@@ -54,7 +54,7 @@ namespace Project2
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel2.Location = new System.Drawing.Point(57, 131);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(80, 20);
+            this.metroLabel2.Size = new System.Drawing.Size(77, 19);
             this.metroLabel2.TabIndex = 1;
             this.metroLabel2.Text = "Password:";
             // 
@@ -65,6 +65,7 @@ namespace Project2
             this.txtUsername.PromptText = "Nhập Username...";
             this.txtUsername.Size = new System.Drawing.Size(460, 23);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Text = "admin";
             this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtPassword
@@ -75,6 +76,7 @@ namespace Project2
             this.txtPassword.PromptText = "Nhập Password...";
             this.txtPassword.Size = new System.Drawing.Size(460, 23);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.Text = "123456a@";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
@@ -101,7 +103,7 @@ namespace Project2
             // Login
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.metroButton1;
             this.ClientSize = new System.Drawing.Size(626, 258);

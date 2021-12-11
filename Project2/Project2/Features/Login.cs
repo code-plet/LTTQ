@@ -70,7 +70,7 @@ namespace Project2
             DialogResult r = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (r == DialogResult.OK)
             {
-                this.Dispose();
+                Application.Exit();
             }
         }
     }

@@ -42,7 +42,7 @@ namespace Project2.Features
                 this.Close();
                 Login login = new Login();
                 login.ShowDialog();
-            }         
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -75,6 +75,12 @@ namespace Project2.Features
             quanLy.ShowDialog();
         }
 
+        private void btnTinhluong_Click(object sender, EventArgs e)
+        {
+            TinhLuongMenu tinhluong = new TinhLuongMenu();
+            DialogResult TinhLuongResult = tinhluong.ShowDialog();
+        }
+
         private void btnHopdong_Click(object sender, EventArgs e)
         {
             HopDong hopDong = new HopDong();
@@ -89,13 +95,13 @@ namespace Project2.Features
 
         private void btnCVBP_Click(object sender, EventArgs e)
         {
-            CVBP cVBP = new CVBP();
+            CVBPMenu cVBP = new CVBPMenu();
             cVBP.ShowDialog();
         }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            DanhMuc danhMuc = new DanhMuc();
+            DanhMucMenu danhMuc = new DanhMucMenu();
             danhMuc.ShowDialog();
         }
     }
