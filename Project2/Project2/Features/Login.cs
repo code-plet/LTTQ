@@ -22,6 +22,7 @@ namespace Project2
         private void Form1_Load(object sender, EventArgs e)
         {
             txtUsername.Focus();
+            this.Activate();
         }
 
         private string getID(string username, string password)

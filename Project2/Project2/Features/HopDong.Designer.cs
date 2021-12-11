@@ -88,9 +88,9 @@ namespace Project2.Features
             this.grbThongTin.Controls.Add(this.lblLoaiHopDong);
             this.grbThongTin.Controls.Add(this.lblTenNV);
             this.grbThongTin.Controls.Add(this.lblBoPhan);
-            this.grbThongTin.Location = new System.Drawing.Point(14, 63);
+            this.grbThongTin.Location = new System.Drawing.Point(14, 72);
             this.grbThongTin.Name = "grbThongTin";
-            this.grbThongTin.Size = new System.Drawing.Size(977, 268);
+            this.grbThongTin.Size = new System.Drawing.Size(977, 259);
             this.grbThongTin.TabIndex = 0;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông Tin";
@@ -367,7 +367,7 @@ namespace Project2.Features
             this.grdHopDong.ReadOnly = true;
             this.grdHopDong.RowHeadersWidth = 51;
             this.grdHopDong.RowTemplate.Height = 24;
-            this.grdHopDong.Size = new System.Drawing.Size(977, 168);
+            this.grdHopDong.Size = new System.Drawing.Size(977, 207);
             this.grdHopDong.TabIndex = 6;
             // 
             // TenBoPhan
@@ -457,7 +457,7 @@ namespace Project2.Features
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 590);
+            this.ClientSize = new System.Drawing.Size(1006, 614);
             this.Controls.Add(this.grdHopDong);
             this.Controls.Add(this.btnHuybo);
             this.Controls.Add(this.btnXoa);

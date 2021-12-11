@@ -43,7 +43,6 @@ namespace Project2.Features
                 Login login = new Login();
                 login.ShowDialog();
             }
-            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -92,6 +91,18 @@ namespace Project2.Features
         {
             HoSo hoSo = new HoSo();
             hoSo.ShowDialog();
+        }
+
+        private void btnCVBP_Click(object sender, EventArgs e)
+        {
+            CVBP cVBP = new CVBP();
+            cVBP.ShowDialog();
+        }
+
+        private void btnDanhMuc_Click(object sender, EventArgs e)
+        {
+            DanhMuc danhMuc = new DanhMuc();
+            danhMuc.ShowDialog();
         }
     }
 }

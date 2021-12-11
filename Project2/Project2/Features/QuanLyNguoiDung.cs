@@ -158,8 +158,10 @@ namespace Project2.Features
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            string sql2 = "Delete from QuyenNguoiDung where NguoiDungID = '" + NguoiDungID + "'";
             string sql = "Delete from NguoiDung where NguoiDungID = '" + NguoiDungID + "'";
             database.Execute(sql);
+            database.Execute(sql2);
             Load_DL();
             Reset();
         }

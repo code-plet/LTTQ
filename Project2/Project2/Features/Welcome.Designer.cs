@@ -41,6 +41,8 @@ namespace Project2.Features
             this.btnHopdong = new System.Windows.Forms.Button();
             this.labelTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnCVBP = new System.Windows.Forms.Button();
+            this.btnDanhMuc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -65,7 +67,7 @@ namespace Project2.Features
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(823, 5);
+            this.btnLogout.Location = new System.Drawing.Point(953, 5);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(72, 64);
             this.btnLogout.TabIndex = 1;
@@ -80,9 +82,9 @@ namespace Project2.Features
             this.btnDoiMK.FlatAppearance.BorderSize = 0;
             this.btnDoiMK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiMK.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMK.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK.Image")));
-            this.btnDoiMK.Location = new System.Drawing.Point(103, 85);
+            this.btnDoiMK.Location = new System.Drawing.Point(51, 85);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.Size = new System.Drawing.Size(170, 142);
             this.btnDoiMK.TabIndex = 2;
@@ -98,9 +100,9 @@ namespace Project2.Features
             this.btnTinhluong.FlatAppearance.BorderSize = 0;
             this.btnTinhluong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnTinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhluong.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinhluong.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinhluong.Image = ((System.Drawing.Image)(resources.GetObject("btnTinhluong.Image")));
-            this.btnTinhluong.Location = new System.Drawing.Point(103, 296);
+            this.btnTinhluong.Location = new System.Drawing.Point(51, 297);
             this.btnTinhluong.Name = "btnTinhluong";
             this.btnTinhluong.Size = new System.Drawing.Size(170, 141);
             this.btnTinhluong.TabIndex = 3;
@@ -116,9 +118,9 @@ namespace Project2.Features
             this.btnPhanquyen.FlatAppearance.BorderSize = 0;
             this.btnPhanquyen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPhanquyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhanquyen.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanquyen.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhanquyen.Image = ((System.Drawing.Image)(resources.GetObject("btnPhanquyen.Image")));
-            this.btnPhanquyen.Location = new System.Drawing.Point(352, 295);
+            this.btnPhanquyen.Location = new System.Drawing.Point(306, 296);
             this.btnPhanquyen.Name = "btnPhanquyen";
             this.btnPhanquyen.Size = new System.Drawing.Size(170, 141);
             this.btnPhanquyen.TabIndex = 4;
@@ -134,9 +136,9 @@ namespace Project2.Features
             this.btnQuanly.FlatAppearance.BorderSize = 0;
             this.btnQuanly.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnQuanly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanly.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanly.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanly.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanly.Image")));
-            this.btnQuanly.Location = new System.Drawing.Point(352, 85);
+            this.btnQuanly.Location = new System.Drawing.Point(306, 85);
             this.btnQuanly.Name = "btnQuanly";
             this.btnQuanly.Size = new System.Drawing.Size(170, 142);
             this.btnQuanly.TabIndex = 5;
@@ -152,9 +154,9 @@ namespace Project2.Features
             this.btnHoso.FlatAppearance.BorderSize = 0;
             this.btnHoso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnHoso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoso.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoso.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoso.Image = ((System.Drawing.Image)(resources.GetObject("btnHoso.Image")));
-            this.btnHoso.Location = new System.Drawing.Point(609, 85);
+            this.btnHoso.Location = new System.Drawing.Point(555, 85);
             this.btnHoso.Name = "btnHoso";
             this.btnHoso.Size = new System.Drawing.Size(170, 142);
             this.btnHoso.TabIndex = 6;
@@ -170,9 +172,9 @@ namespace Project2.Features
             this.btnHopdong.FlatAppearance.BorderSize = 0;
             this.btnHopdong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnHopdong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHopdong.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHopdong.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHopdong.Image = ((System.Drawing.Image)(resources.GetObject("btnHopdong.Image")));
-            this.btnHopdong.Location = new System.Drawing.Point(609, 296);
+            this.btnHopdong.Location = new System.Drawing.Point(555, 297);
             this.btnHopdong.Name = "btnHopdong";
             this.btnHopdong.Size = new System.Drawing.Size(170, 142);
             this.btnHopdong.TabIndex = 7;
@@ -197,11 +199,49 @@ namespace Project2.Features
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnCVBP
+            // 
+            this.btnCVBP.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnCVBP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCVBP.FlatAppearance.BorderSize = 0;
+            this.btnCVBP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCVBP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCVBP.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCVBP.Image = ((System.Drawing.Image)(resources.GetObject("btnCVBP.Image")));
+            this.btnCVBP.Location = new System.Drawing.Point(807, 85);
+            this.btnCVBP.Name = "btnCVBP";
+            this.btnCVBP.Size = new System.Drawing.Size(170, 142);
+            this.btnCVBP.TabIndex = 9;
+            this.btnCVBP.Text = "Chức Vụ - Bộ Phận";
+            this.btnCVBP.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCVBP.UseVisualStyleBackColor = false;
+            this.btnCVBP.Click += new System.EventHandler(this.btnCVBP_Click);
+            // 
+            // btnDanhMuc
+            // 
+            this.btnDanhMuc.BackColor = System.Drawing.Color.Aqua;
+            this.btnDanhMuc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
+            this.btnDanhMuc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhMuc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhMuc.Image")));
+            this.btnDanhMuc.Location = new System.Drawing.Point(807, 297);
+            this.btnDanhMuc.Name = "btnDanhMuc";
+            this.btnDanhMuc.Size = new System.Drawing.Size(170, 142);
+            this.btnDanhMuc.TabIndex = 10;
+            this.btnDanhMuc.Text = "Danh Mục";
+            this.btnDanhMuc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDanhMuc.UseVisualStyleBackColor = false;
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            // 
             // Welcome
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(888, 591);
+            this.ClientSize = new System.Drawing.Size(1026, 591);
+            this.Controls.Add(this.btnDanhMuc);
+            this.Controls.Add(this.btnCVBP);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.btnHopdong);
             this.Controls.Add(this.btnHoso);
@@ -239,5 +279,7 @@ namespace Project2.Features
         private System.Windows.Forms.Button btnHopdong;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnCVBP;
+        private System.Windows.Forms.Button btnDanhMuc;
     }
 }
