@@ -24,7 +24,20 @@ namespace Project2.Features
 
         private void ChamCongButton_Click(object sender, EventArgs e)
         {
+            frmChamCong ChamCongForm = new frmChamCong();
+            ChamCongForm.ShowDialog();
+        }
 
+        private void BanKeLuongButton_Click(object sender, EventArgs e)
+        {
+            frmBanKeLuong bankeluongform = new frmBanKeLuong();
+            bankeluongform.ShowDialog();
+        }
+
+        private void LuongChucDanhBtn_Click(object sender, EventArgs e)
+        {
+            frmLuongChucDanh LuongChucDanhForm = new frmLuongChucDanh();
+            LuongChucDanhForm.ShowDialog();
         }
     }
 }

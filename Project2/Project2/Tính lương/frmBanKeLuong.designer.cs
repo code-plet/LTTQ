@@ -98,14 +98,14 @@
             this.BanKeLuongGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BanKeLuongGrid.Location = new System.Drawing.Point(12, 92);
             this.BanKeLuongGrid.Name = "BanKeLuongGrid";
-            this.BanKeLuongGrid.Size = new System.Drawing.Size(1250, 211);
+            this.BanKeLuongGrid.Size = new System.Drawing.Size(1072, 211);
             this.BanKeLuongGrid.TabIndex = 56;
             // 
             // frmBanKeLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1274, 315);
+            this.ClientSize = new System.Drawing.Size(1085, 315);
             this.Controls.Add(this.BanKeLuongGrid);
             this.Controls.Add(this.btnNop);
             this.Controls.Add(this.btnLuu);
@@ -117,6 +117,7 @@
             this.Name = "frmBanKeLuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BAN KE LUONG";
+            this.Load += new System.EventHandler(this.frmBanKeLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanKeLuongGrid)).EndInit();
             this.ResumeLayout(false);

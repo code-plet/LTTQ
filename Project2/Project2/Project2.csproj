@@ -100,7 +100,7 @@
     <Compile Include="Features\TinhLuongMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Features\TinhLuongMenu.Designer.cs">
+    <Compile Include="Features\TinhLuongMenu.designer.cs">
       <DependentUpon>TinhLuongMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Features\Welcome.cs">
@@ -122,6 +122,18 @@
     </Compile>
     <Compile Include="Tính lương\frmBanKeLuong.designer.cs">
       <DependentUpon>frmBanKeLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tính lương\frmChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tính lương\frmChamCong.designer.cs">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tính lương\frmLuongChucDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tính lương\frmLuongChucDanh.designer.cs">
+      <DependentUpon>frmLuongChucDanh.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Features\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
@@ -159,6 +171,12 @@
     </Compile>
     <EmbeddedResource Include="Tính lương\frmBanKeLuong.resx">
       <DependentUpon>frmBanKeLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tính lương\frmChamCong.resx">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tính lương\frmLuongChucDanh.resx">
+      <DependentUpon>frmLuongChucDanh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

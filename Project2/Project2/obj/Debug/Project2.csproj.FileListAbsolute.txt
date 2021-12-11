@@ -73,3 +73,15 @@ D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\es\Dev
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ja\DevExpress.Pdf.v21.1.Core.resources.dll
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ru\DevExpress.Pdf.v21.1.Core.resources.dll
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.TinhLuongMenu.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.HopDong.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.HoSo.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.frmBanKeLuong.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.frmChamCong.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.exe.licenses
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\DevExpress.XtraLayout.v21.1.dll
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\DevExpress.XtraLayout.v21.1.xml
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\de\DevExpress.XtraLayout.v21.1.resources.dll
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\es\DevExpress.XtraLayout.v21.1.resources.dll
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ja\DevExpress.XtraLayout.v21.1.resources.dll
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ru\DevExpress.XtraLayout.v21.1.resources.dll
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.frmLuongChucDanh.resources

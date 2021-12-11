@@ -18,6 +18,30 @@ namespace Project2
 
         }
 
+        private void frmBanKeLuong_Load(object sender, EventArgs e)
+        {
+            string time = dtpThang.Value.Year.ToString() + dtpThang.Value.Month.ToString("D2");
+            string sql = @"select a.NhanVienID , a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên', b.TamUng as 'Tạm Ứng', b.ThangTamUng as 'Tháng tạm Ứng', c.NgayCongChuan as 'Ngày Công Chuẩn', c.ThangKeLuong,
+                                c.TrangThai as 'Trạng Thái', c.ChiTietBanKeLuongID, c.ThueThuNhapCaNhan, c.NgayTinhLuong as 'Ngày Tính Lương', f.TienLuongCung as 'Tiền Lương Cứng', f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', g.HieuSuat as 'Hiệu Suất',
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương',
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng as 'Thực Lĩnh' 
+                            From NhanVien a 
+                            inner join ChiTietTamUng b on a.NhanVienID = b.NhanVienID and b.ThangTamUng = '" + time + @"'
+                            inner join NhanVienChucDanh d on a.NhanVienID = d.NhanVienID
+                            inner join LuongChucDanh f on f.ChucDanhID = d.ChucDanhID
+                            inner join DanhGiaHieuSuat g on g.NhanVienID = a.NhanVienID and g.Thang = '" + time + @"'
+                            left join ChiTietBanKeLuong c on c.NhanVienID = a.NhanVienID and  c.ThangKeLuong = '" + time + "'";
+            DataTable dt = db.Read(sql);
+            bindingSource1.DataSource = dt;
+            this.BanKeLuongGrid.DataSource = bindingSource1;
+            this.BanKeLuongGrid.Columns["NhanVienID"].Visible = false;
+            this.BanKeLuongGrid.Columns["ChiTietBanKeLuongID"].Visible = false;
+            this.BanKeLuongGrid.Columns["ThueThuNhapCaNhan"].Visible = false;
+            this.BanKeLuongGrid.Columns["ThangKeLuong"].Visible = false;
+        }
+
+        Database db = new Database();
+
         private void btnTinhLuong_Click(object sender, EventArgs e)
         {
 
@@ -25,19 +49,19 @@ namespace Project2
             {
 
                 string time = dtpThang.Value.Year.ToString() + dtpThang.Value.Month.ToString("D2");
-                string sql = @"select a.NhanVienID, a.MaNV, a.TenNV, b.TamUng, b.ThangTamUng, c.NgayCongChuan, c.ThangKeLuong,
-                                c.TrangThai, c.ChiTietBanKeLuongID, c.ThueThuNhapCaNhan, c.NgayTinhLuong, f.TienLuongCung, f.PhuCap*f.TienLuongCung/100 as PhuCap, g.HieuSuat,
-                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) TongLuong,
-                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng ThucLinh 
+                string sql = @"select a.NhanVienID , a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên', b.TamUng as 'Tạm Ứng', b.ThangTamUng as 'Tháng tạm Ứng', c.NgayCongChuan as 'Ngày Công Chuẩn', c.ThangKeLuong,
+                                c.TrangThai as 'Trạng Thái', c.ChiTietBanKeLuongID, c.ThueThuNhapCaNhan, c.NgayTinhLuong as 'Ngày Tính Lương', f.TienLuongCung as 'Tiền Lương Cứng', f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', g.HieuSuat as 'Hiệu Suất',
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương',
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng as 'Thực Lĩnh' 
                             From NhanVien a 
                             inner join ChiTietTamUng b on a.NhanVienID = b.NhanVienID and b.ThangTamUng = '" + time + @"'
                             inner join NhanVienChucDanh d on a.NhanVienID = d.NhanVienID
                             inner join LuongChucDanh f on f.ChucDanhID = d.ChucDanhID
                             inner join DanhGiaHieuSuat g on g.NhanVienID = a.NhanVienID and g.Thang = '" + time + @"'
                             left join ChiTietBanKeLuong c on c.NhanVienID = a.NhanVienID and  c.ThangKeLuong = '" + time + "'";
-                Database db = new Database();
                 DataTable dt = db.Read(sql);
                 bindingSource1.DataSource = dt;
+                this.BanKeLuongGrid.DataSource = bindingSource1;
             }
             catch (Exception)
             {
@@ -46,29 +70,30 @@ namespace Project2
 
         }
 
-        Database db = new Database();
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            #region Bug
-            /*int dem = 0;
-            for (int i = 0; i < gridView1.RowCount; i++)
+            #region Fixing Bug
+            int dem = 0;
+            DataGridViewRowCollection row = BanKeLuongGrid.Rows;
+            for (int i = 0; i < BanKeLuongGrid.RowCount - 1; i++)
             {
-                DataRowView row = gridView1.GetRow(i) as DataRowView;
-                if (row != null)
+                DataGridViewCellCollection CellCollection = row[i].Cells;
+                if (CellCollection != null)
                 {
-                    string ChiTietBanKeLuongID = row.Row["ChiTietBanKeLuongID"].ToString();
-                    int NgayCongChuan = row.Row["NgayCongChuan"] == DBNull.Value ? 0 : Convert.ToInt32(row.Row["NgayCongChuan"]);
-                    int NhanVienID = Convert.ToInt32(row.Row["NhanVienID"]);
-                    decimal HieuSuat = row.Row["HieuSuat"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["HieuSuat"]);
-                    decimal TienLuongCung = row.Row["TienLuongCung"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["TienLuongCung"]);
-                    decimal PhuCap = row.Row["PhuCap"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["PhuCap"]);
-                    decimal TamUng = row.Row["TamUng"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["TamUng"]);
-                    int NgayTinhLuong = row.Row["NgayTinhLuong"] == DBNull.Value ? 0 : Convert.ToInt32(row.Row["NgayTinhLuong"]);
-                    int TongLuong = row.Row["TongLuong"] == DBNull.Value ? 0 : Convert.ToInt32(row.Row["TongLuong"]);
-                    decimal ThueThuNhapCaNhan = row.Row["ThueThuNhapCaNhan"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["ThueThuNhapCaNhan"]);
-                    decimal ThucLinh = row.Row["ThucLinh"] == DBNull.Value ? 0 : Convert.ToDecimal(row.Row["ThucLinh"]);
-                    string TrangThai = row.Row["TrangThai"].ToString();
+                    string ChiTietBanKeLuongID = CellCollection[8].Value.ToString();
+                    int NgayCongChuan = Int32.Parse(CellCollection[5].Value.ToString());
+                    int NhanVienID = Convert.ToInt32(CellCollection[0].Value.ToString());
+                    decimal HieuSuat = Decimal.Parse(CellCollection[13].Value.ToString());
+                    decimal TienLuongCung = Decimal.Parse(CellCollection[11].Value.ToString());
+                    decimal PhuCap = Decimal.Parse(CellCollection[12].Value.ToString());
+                    decimal TamUng = Decimal.Parse(CellCollection[3].Value.ToString());
+                    int NgayTinhLuong = Int32.Parse(CellCollection[10].Value.ToString());
+                    int TongLuong = Int32.Parse(CellCollection[14].Value.ToString());
+                    decimal ThueThuNhapCaNhan = Decimal.Parse(CellCollection[9].Value.ToString());
+                    decimal ThucLinh = Decimal.Parse(CellCollection[15].Value.ToString());
+                    string TrangThai = CellCollection[7].Value.ToString();
+
+
                     if (ChiTietBanKeLuongID != "" && TrangThai == "1")
                     {
                         string sql = @"UPDATE ChiTietBanKeLuong
@@ -98,29 +123,29 @@ namespace Project2
             else
             {
                 MessageBox.Show("Lưu " + dem + " bản kê lương");
-            }*/
+            }
             #endregion
         }
 
         private void btnNop_Click(object sender, EventArgs e)
         {
-            #region bug1
-            /*try
+            try
             {
                 int dem = 0;
-                for (int i = 0; i < gridView1.RowCount; i++)
+                DataGridViewRowCollection row = BanKeLuongGrid.Rows;
+                for (int i = 0; i < BanKeLuongGrid.RowCount - 1; i++)
                 {
-                    DataRowView row = gridView1.GetRow(i) as DataRowView;
-                    if (row != null)
+                    DataGridViewCellCollection CellCollection = row[i].Cells;
+                    if (CellCollection != null)
                     {
-                        if (row.Row["TrangThai"].ToString() == "1")
+                        if (CellCollection[7].Value.ToString() == "1")
                         {
-                            string ChiTietBanKeLuongID = row.Row["ChiTietBanKeLuongID"].ToString();
+                            string ChiTietBanKeLuongID = CellCollection[8].Value.ToString();
 
                             string sql = @"Update ChiTietBanKeLuong Set TrangThai = 2 where ChiTietBanKeLuongID = '" + ChiTietBanKeLuongID + "'";
                             db.Execute(sql);
 
-                            sql = @"update ChiTietTamUng set TrangThaiID = 2 Where NhanVienID = '"+ row.Row["NhanVienID"].ToString() + "' And ThangTamUng = '"+ row.Row["ThangTamUng"].ToString() + "'";
+                            sql = @"update ChiTietTamUng set TrangThaiID = 2 Where NhanVienID = '"+ CellCollection[0].Value.ToString() + "' And ThangTamUng = '"+ CellCollection[4].Value.ToString() + "'";
                             db.Execute(sql);
                             dem++;
                         }
@@ -138,8 +163,8 @@ namespace Project2
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi nộp chấm công!");
-            }*/
-            #endregion
+            }
         }
+
     }
 }
