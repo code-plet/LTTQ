@@ -92,5 +92,11 @@ namespace Project2.Features
             CVBP cVBP = new CVBP();
             cVBP.ShowDialog();
         }
+
+        private void btnDanhMuc_Click(object sender, EventArgs e)
+        {
+            DanhMuc danhMuc = new DanhMuc();
+            danhMuc.ShowDialog();
+        }
     }
 }

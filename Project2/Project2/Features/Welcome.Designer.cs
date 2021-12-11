@@ -42,6 +42,7 @@ namespace Project2.Features
             this.labelTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnCVBP = new System.Windows.Forms.Button();
+            this.btnDanhMuc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -215,11 +216,30 @@ namespace Project2.Features
             this.btnCVBP.UseVisualStyleBackColor = false;
             this.btnCVBP.Click += new System.EventHandler(this.btnCVBP_Click);
             // 
+            // btnDanhMuc
+            // 
+            this.btnDanhMuc.BackColor = System.Drawing.Color.Aqua;
+            this.btnDanhMuc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
+            this.btnDanhMuc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhMuc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhMuc.Image")));
+            this.btnDanhMuc.Location = new System.Drawing.Point(807, 297);
+            this.btnDanhMuc.Name = "btnDanhMuc";
+            this.btnDanhMuc.Size = new System.Drawing.Size(170, 142);
+            this.btnDanhMuc.TabIndex = 10;
+            this.btnDanhMuc.Text = "Danh Mục";
+            this.btnDanhMuc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDanhMuc.UseVisualStyleBackColor = false;
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            // 
             // Welcome
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1026, 591);
+            this.Controls.Add(this.btnDanhMuc);
             this.Controls.Add(this.btnCVBP);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.btnHopdong);
@@ -259,5 +279,6 @@ namespace Project2.Features
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnCVBP;
+        private System.Windows.Forms.Button btnDanhMuc;
     }
 }

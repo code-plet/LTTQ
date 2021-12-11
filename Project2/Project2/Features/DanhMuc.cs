@@ -10,30 +10,25 @@ using System.Windows.Forms;
 
 namespace Project2.Features
 {
-    public partial class CVBP : MetroFramework.Forms.MetroForm
+    public partial class DanhMuc : MetroFramework.Forms.MetroForm
     {
-        public CVBP()
+        public DanhMuc()
         {
             InitializeComponent();
         }
 
         private void btnChucVu_Click(object sender, EventArgs e)
         {
-            ChucVu chucVu = new ChucVu();
-            chucVu.Show();
             this.Close();
+            ThemBoPhan themBoPhan = new ThemBoPhan();
+            themBoPhan.ShowDialog();
         }
 
-        private void btnBoPhan_Click(object sender, EventArgs e)
+        private void btnHopDong_Click(object sender, EventArgs e)
         {
-            BoPhan boPhan = new BoPhan();
-            boPhan.Show();
             this.Close();
-        }
-
-        private void CVBP_Load(object sender, EventArgs e)
-        {
-
+            ThemLoaiHD themLoaiHD = new ThemLoaiHD();
+            themLoaiHD.ShowDialog();
         }
     }
 }
