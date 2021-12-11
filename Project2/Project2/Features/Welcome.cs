@@ -95,13 +95,13 @@ namespace Project2.Features
 
         private void btnCVBP_Click(object sender, EventArgs e)
         {
-            CVBP cVBP = new CVBP();
+            CVBPMenu cVBP = new CVBPMenu();
             cVBP.ShowDialog();
         }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            DanhMuc danhMuc = new DanhMuc();
+            DanhMucMenu danhMuc = new DanhMucMenu();
             danhMuc.ShowDialog();
         }
     }

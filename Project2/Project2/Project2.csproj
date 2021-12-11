@@ -65,13 +65,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doanh Mục\ThemBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh Mục\ThemBoPhan.designer.cs">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanh Mục\ThemLoaiHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh Mục\ThemLoaiHD.designer.cs">
+      <DependentUpon>ThemLoaiHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="DuLieu\Database.cs" />
     <Compile Include="DuLieu\Security.cs" />
+    <Compile Include="CV-NVBP\NVBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV-NVBP\NVBP.Designer.cs">
+      <DependentUpon>NVBP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Features\ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV-NVBP\ChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV-NVBP\ChucVu.Designer.cs">
+      <DependentUpon>ChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV-NVBP\CVBPMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV-NVBP\CVBPMenu.Designer.cs">
+      <DependentUpon>CVBPMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanh Mục\DanhMucMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh Mục\DanhMucMenu.Designer.cs">
+      <DependentUpon>DanhMucMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Features\HopDong.cs">
       <SubType>Form</SubType>
@@ -97,10 +133,10 @@
     <Compile Include="Features\QuanLyNguoiDung.Designer.cs">
       <DependentUpon>QuanLyNguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Features\TinhLuongMenu.cs">
+    <Compile Include="Tính lương\TinhLuongMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Features\TinhLuongMenu.designer.cs">
+    <Compile Include="Tính lương\TinhLuongMenu.designer.cs">
       <DependentUpon>TinhLuongMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Features\Welcome.cs">
@@ -135,8 +171,26 @@
     <Compile Include="Tính lương\frmLuongChucDanh.designer.cs">
       <DependentUpon>frmLuongChucDanh.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Doanh Mục\ThemBoPhan.resx">
+      <DependentUpon>ThemBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh Mục\ThemLoaiHD.resx">
+      <DependentUpon>ThemLoaiHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV-NVBP\NVBP.resx">
+      <DependentUpon>NVBP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Features\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV-NVBP\ChucVu.resx">
+      <DependentUpon>ChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV-NVBP\CVBPMenu.resx">
+      <DependentUpon>CVBPMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh Mục\DanhMucMenu.resx">
+      <DependentUpon>DanhMucMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Features\HopDong.resx">
       <DependentUpon>HopDong.cs</DependentUpon>
@@ -150,7 +204,7 @@
     <EmbeddedResource Include="Features\QuanLyNguoiDung.resx">
       <DependentUpon>QuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Features\TinhLuongMenu.resx">
+    <EmbeddedResource Include="Tính lương\TinhLuongMenu.resx">
       <DependentUpon>TinhLuongMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Features\Welcome.resx">

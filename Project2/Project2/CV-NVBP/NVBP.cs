@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project2.Features
 {
-    public partial class BoPhan : MetroFramework.Forms.MetroForm
+    public partial class NVBP : MetroFramework.Forms.MetroForm
     {
-        public BoPhan()
+        public NVBP()
         {
             InitializeComponent();
         }
@@ -151,7 +151,7 @@ namespace Project2.Features
             if (r == DialogResult.OK)
             {
                 this.Close();
-                CVBP cVBP = new CVBP();
+                CVBPMenu cVBP = new CVBPMenu();
                 cVBP.Show();
             }
         }

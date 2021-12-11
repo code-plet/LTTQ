@@ -85,3 +85,9 @@ D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\es\Dev
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ja\DevExpress.XtraLayout.v21.1.resources.dll
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\bin\Debug\ru\DevExpress.XtraLayout.v21.1.resources.dll
 D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.frmLuongChucDanh.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.ChucVu.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.ThemBoPhan.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.ThemLoaiHD.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.DanhMucMenu.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.CVBPMenu.resources
+D:\important files\PTPMOOP\Source Github\LTTQ\Project2\Project2\obj\Debug\Project2.Features.NVBP.resources
