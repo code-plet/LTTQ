@@ -13,6 +13,7 @@ namespace Project2
 {
     public partial class Login : MetroFramework.Forms.MetroForm
     {
+
         public Login()
         {
             InitializeComponent();
@@ -45,7 +46,13 @@ namespace Project2
             ID_USER = getID(txtUsername.Text, txtPassword.Text);
             if (ID_USER != "")
             {
+
                 MessageBox.Show("Đăng nhập thành công", "Thông báo");
+                DataTable dt = new DataTable();
+                dt = database.Read("SELECT QuanTri FROM NguoiDung WHERE NguoiDungID =" + ID_USER);
+                string QuanTri = dt.Rows[0]["QuanTri"].ToString();
+                ; dt = database.Read("SELECT NghiepVuID FROM QuyenNguoiDung WHERE NguoiDungID =" + ID_USER);
+                UserAccount.SetUser(ID_USER, QuanTri, dt);
                 Welcome welcome = new Welcome();
                 welcome.Show();
                 this.Hide();

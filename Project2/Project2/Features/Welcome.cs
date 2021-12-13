@@ -19,7 +19,6 @@ namespace Project2.Features
         }
 
         Database database = new Database();
-        string isAdmin;
 
         private void Welcome_Load(object sender, EventArgs e)
         {
@@ -29,7 +28,6 @@ namespace Project2.Features
                 foreach (DataRow dr in dt.Rows)
                 {
                     lblUsername.Text = dr["TenDangNhap"].ToString();
-                    isAdmin = dr["QuanTri"].ToString();
                 }    
             }
         }
@@ -40,8 +38,7 @@ namespace Project2.Features
             if (r == DialogResult.OK)
             {
                 this.Close();
-                Login login = new Login();
-                login.ShowDialog();
+                Application.Restart();
             }
         }
 
@@ -52,15 +49,15 @@ namespace Project2.Features
 
         private void btnPhanquyen_Click(object sender, EventArgs e)
         {
-            if (isAdmin == "False")
-            {
-                MessageBox.Show("Bạn không có quyền để sử dụng tính năng này", isAdmin, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            if (UserAccount.HeThongAccess || UserAccount.QuanTriAccess)
             {
                 PhanQuyen phanQuyen = new PhanQuyen();
                 phanQuyen.ShowDialog();
-            }    
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnDoiMK_Click(object sender, EventArgs e)
@@ -71,38 +68,82 @@ namespace Project2.Features
 
         private void btnQuanly_Click(object sender, EventArgs e)
         {
-            QuanLyNguoiDung quanLy = new QuanLyNguoiDung();
-            quanLy.ShowDialog();
+            if (UserAccount.QuanTriAccess || UserAccount.HeThongAccess)
+            {
+                QuanLyNguoiDung quanLy = new QuanLyNguoiDung();
+                quanLy.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void btnTinhluong_Click(object sender, EventArgs e)
         {
-            TinhLuongMenu tinhluong = new TinhLuongMenu();
-            DialogResult TinhLuongResult = tinhluong.ShowDialog();
+            if (UserAccount.TienLuongAccess || UserAccount.QuanTriAccess)
+            {
+                TinhLuongMenu tinhluong = new TinhLuongMenu();
+                DialogResult TinhLuongResult = tinhluong.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnHopdong_Click(object sender, EventArgs e)
         {
-            HopDong hopDong = new HopDong();
-            hopDong.ShowDialog();
+            if (UserAccount.NhanSuAccess || UserAccount.QuanTriAccess)
+            {
+                HopDong hopDong = new HopDong();
+                hopDong.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnHoso_Click(object sender, EventArgs e)
         {
-            HoSo hoSo = new HoSo();
-            hoSo.ShowDialog();
+            if (UserAccount.NhanSuAccess || UserAccount.QuanTriAccess)
+            {
+                HoSo hoSo = new HoSo();
+                hoSo.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
         private void btnCVBP_Click(object sender, EventArgs e)
         {
-            CVBPMenu cVBP = new CVBPMenu();
-            cVBP.ShowDialog();
+            if (UserAccount.NhanSuAccess || UserAccount.QuanTriAccess)
+            {
+                CVBPMenu CVBP = new CVBPMenu();
+                CVBP.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            DanhMucMenu danhMuc = new DanhMucMenu();
-            danhMuc.ShowDialog();
+            if (UserAccount.DanhMucAccess || UserAccount.QuanTriAccess)
+            {
+                DanhMucMenu danhMuc = new DanhMucMenu();
+                danhMuc.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này", "Vượt Quyền Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

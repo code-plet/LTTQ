@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database Related\UserAccount.cs" />
     <Compile Include="Doanh Mục\ThemBoPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +78,8 @@
     <Compile Include="Doanh Mục\ThemLoaiHD.designer.cs">
       <DependentUpon>ThemLoaiHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="DuLieu\Database.cs" />
-    <Compile Include="DuLieu\Security.cs" />
+    <Compile Include="Database Related\Database.cs" />
+    <Compile Include="Database Related\Security.cs" />
     <Compile Include="CV-NVBP\NVBP.cs">
       <SubType>Form</SubType>
     </Compile>
