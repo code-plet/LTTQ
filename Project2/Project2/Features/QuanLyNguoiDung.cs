@@ -104,6 +104,7 @@ namespace Project2.Features
             kt = 2;
             txtTenDangNhap.Enabled = true;
             txtMatKhau.Enabled = true;
+            txtMatKhau.Clear();
             cbQuanTri.Enabled = true;
             cmbBoPhan.Enabled = true;
             cmbNhanVien.Enabled = true;
@@ -138,6 +139,13 @@ namespace Project2.Features
             }
             else
             {
+                Database db = new Database();
+                dt = db.Read(@"select TenDangNhap from NguoiDung where NguoiDungID = "+UserAccount.UserID);
+                
+                if (dt.Rows[0]["TenDangNhap"].ToString() == txtTenDangNhap.Text)
+                {
+                    UserAccount.QuanTriAccess = cbQuanTri.Checked;
+                }
                 string sql = "";
                 if (txtMatKhau.Text.Trim() != "")
                 {

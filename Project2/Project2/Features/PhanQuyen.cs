@@ -57,6 +57,14 @@ namespace Project2.Features
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(cmbNguoiDung.SelectedValue.ToString() == UserAccount.UserID)
+            {
+                UserAccount.HeThongAccess = cbQLHT.Checked;
+                UserAccount.BaoCaoAccess = cbTKBaoCao.Checked;
+                UserAccount.NhanSuAccess = cbQLNhanSu.Checked;
+                UserAccount.TienLuongAccess = cbQLTienLuong.Checked;
+                UserAccount.DanhMucAccess = cbQLDanhMuc.Checked;
+            }
             try
             {
                 string sql = "delete from QuyenNguoiDung where NguoiDungID = '" + cmbNguoiDung.SelectedValue + "'";
@@ -104,6 +112,37 @@ namespace Project2.Features
         private void lblBoPhan_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbNguoiDung_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNguoiDung.SelectedValue != null)
+            {
+                Database db = new Database();
+                DataTable dt = db.Read(@"select NghiepVuID from QuyenNguoiDung inner join NguoiDung on QuyenNguoiDung.NguoiDungID = NguoiDung.NguoiDungID where TenDangNhap = '" + cmbNguoiDung.Text + "' order by NghiepVuID asc");
+                foreach(DataRow row in dt.Rows)
+                {
+                    switch (int.Parse(row["NghiepVuID"].ToString()))
+                    {
+                        case 1:
+                            cbQLHT.Checked = true;
+                            break;
+                        case 2:
+                            cbQLDanhMuc.Checked = true;
+                            break;
+                        case 3:
+                            cbQLNhanSu.Checked = true;
+                            break;
+                        case 4:
+                            cbQLTienLuong.Checked = true;
+                            break;
+                        case 5:
+                            cbTKBaoCao.Checked = true;
+                            break;
+                    }
+                }
+                
+            }
         }
     }
 }
