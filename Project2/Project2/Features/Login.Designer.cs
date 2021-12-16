@@ -65,7 +65,6 @@ namespace Project2
             this.txtUsername.PromptText = "Nhập Username...";
             this.txtUsername.Size = new System.Drawing.Size(460, 23);
             this.txtUsername.TabIndex = 2;
-            this.txtUsername.Text = "admin";
             this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtPassword
@@ -76,7 +75,6 @@ namespace Project2
             this.txtPassword.PromptText = "Nhập Password...";
             this.txtPassword.Size = new System.Drawing.Size(460, 23);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "123456a@";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin

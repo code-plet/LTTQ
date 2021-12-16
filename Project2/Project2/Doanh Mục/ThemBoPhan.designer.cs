@@ -32,16 +32,16 @@ namespace Project2.Features
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemBoPhan));
             this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTinhThanh = new System.Windows.Forms.Label();
             this.txtBoPhan = new System.Windows.Forms.TextBox();
+            this.lblTinhThanh = new System.Windows.Forms.Label();
             this.grdThemBP = new System.Windows.Forms.DataGridView();
+            this.IDBoPhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenBP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnHuybo = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.IDBoPhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenBP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdThemBP)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +56,10 @@ namespace Project2.Features
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(571, 6);
+            this.btnLogout.Location = new System.Drawing.Point(428, 5);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(60, 49);
+            this.btnLogout.Size = new System.Drawing.Size(45, 40);
             this.btnLogout.TabIndex = 9;
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -69,29 +70,33 @@ namespace Project2.Features
             this.groupBox1.Controls.Add(this.txtBoPhan);
             this.groupBox1.Controls.Add(this.lblTinhThanh);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 74);
+            this.groupBox1.Location = new System.Drawing.Point(9, 60);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(608, 98);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(456, 80);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin";
+            // 
+            // txtBoPhan
+            // 
+            this.txtBoPhan.Location = new System.Drawing.Point(119, 31);
+            this.txtBoPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBoPhan.Name = "txtBoPhan";
+            this.txtBoPhan.Size = new System.Drawing.Size(216, 23);
+            this.txtBoPhan.TabIndex = 2;
             // 
             // lblTinhThanh
             // 
             this.lblTinhThanh.AutoSize = true;
             this.lblTinhThanh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTinhThanh.Location = new System.Drawing.Point(79, 42);
+            this.lblTinhThanh.Location = new System.Drawing.Point(59, 34);
+            this.lblTinhThanh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTinhThanh.Name = "lblTinhThanh";
-            this.lblTinhThanh.Size = new System.Drawing.Size(62, 18);
+            this.lblTinhThanh.Size = new System.Drawing.Size(52, 14);
             this.lblTinhThanh.TabIndex = 1;
             this.lblTinhThanh.Text = "Bộ Phận";
-            // 
-            // txtBoPhan
-            // 
-            this.txtBoPhan.Location = new System.Drawing.Point(159, 38);
-            this.txtBoPhan.Name = "txtBoPhan";
-            this.txtBoPhan.Size = new System.Drawing.Size(286, 27);
-            this.txtBoPhan.TabIndex = 2;
             // 
             // grdThemBP
             // 
@@ -102,73 +107,15 @@ namespace Project2.Features
             this.grdThemBP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDBoPhan,
             this.TenBP});
-            this.grdThemBP.Location = new System.Drawing.Point(12, 223);
+            this.grdThemBP.Location = new System.Drawing.Point(9, 181);
+            this.grdThemBP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grdThemBP.Name = "grdThemBP";
             this.grdThemBP.ReadOnly = true;
             this.grdThemBP.RowHeadersWidth = 51;
             this.grdThemBP.RowTemplate.Height = 24;
-            this.grdThemBP.Size = new System.Drawing.Size(608, 161);
+            this.grdThemBP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdThemBP.Size = new System.Drawing.Size(456, 131);
             this.grdThemBP.TabIndex = 11;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(12, 178);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(77, 38);
-            this.btnThem.TabIndex = 12;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(144, 178);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(77, 38);
-            this.btnSua.TabIndex = 13;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Location = new System.Drawing.Point(263, 178);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(106, 38);
-            this.btnCapNhat.TabIndex = 14;
-            this.btnCapNhat.Text = "Cập Nhật";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
-            // 
-            // btnHuybo
-            // 
-            this.btnHuybo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHuybo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuybo.Location = new System.Drawing.Point(411, 178);
-            this.btnHuybo.Name = "btnHuybo";
-            this.btnHuybo.Size = new System.Drawing.Size(77, 38);
-            this.btnHuybo.TabIndex = 15;
-            this.btnHuybo.Text = "Hủy Bỏ";
-            this.btnHuybo.UseVisualStyleBackColor = true;
-            this.btnHuybo.Click += new System.EventHandler(this.btnHuyBo_Click_1);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(543, 179);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(77, 38);
-            this.btnXoa.TabIndex = 16;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // IDBoPhan
             // 
@@ -188,11 +135,76 @@ namespace Project2.Features
             this.TenBP.ReadOnly = true;
             this.TenBP.Width = 290;
             // 
+            // btnThem
+            // 
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Location = new System.Drawing.Point(9, 145);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(58, 31);
+            this.btnThem.TabIndex = 12;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Location = new System.Drawing.Point(108, 145);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(58, 31);
+            this.btnSua.TabIndex = 13;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.Location = new System.Drawing.Point(197, 145);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(80, 31);
+            this.btnCapNhat.TabIndex = 14;
+            this.btnCapNhat.Text = "Cập Nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
+            // 
+            // btnHuybo
+            // 
+            this.btnHuybo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHuybo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuybo.Location = new System.Drawing.Point(308, 145);
+            this.btnHuybo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuybo.Name = "btnHuybo";
+            this.btnHuybo.Size = new System.Drawing.Size(58, 31);
+            this.btnHuybo.TabIndex = 15;
+            this.btnHuybo.Text = "Hủy Bỏ";
+            this.btnHuybo.UseVisualStyleBackColor = true;
+            this.btnHuybo.Click += new System.EventHandler(this.btnHuyBo_Click_1);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Location = new System.Drawing.Point(407, 145);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(58, 31);
+            this.btnXoa.TabIndex = 16;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // ThemBoPhan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 396);
+            this.ClientSize = new System.Drawing.Size(472, 322);
             this.ControlBox = false;
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuybo);
@@ -203,9 +215,11 @@ namespace Project2.Features
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLogout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThemBoPhan";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Thêm Bộ Phận";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;

@@ -43,10 +43,10 @@ namespace Project2.Features
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.grdChucVu = new System.Windows.Forms.DataGridView();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.TenChucDanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBoPhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdChucVu)).BeginInit();
             this.SuspendLayout();
@@ -60,9 +60,11 @@ namespace Project2.Features
             this.groupBox1.Controls.Add(this.lblNhanVien);
             this.groupBox1.Controls.Add(this.lblBoPhan);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 75);
+            this.groupBox1.Location = new System.Drawing.Point(8, 61);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(818, 132);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(614, 107);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin";
@@ -70,25 +72,28 @@ namespace Project2.Features
             // cmbTenChucDanh
             // 
             this.cmbTenChucDanh.FormattingEnabled = true;
-            this.cmbTenChucDanh.Location = new System.Drawing.Point(197, 91);
+            this.cmbTenChucDanh.Location = new System.Drawing.Point(148, 74);
+            this.cmbTenChucDanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbTenChucDanh.Name = "cmbTenChucDanh";
-            this.cmbTenChucDanh.Size = new System.Drawing.Size(331, 28);
+            this.cmbTenChucDanh.Size = new System.Drawing.Size(249, 25);
             this.cmbTenChucDanh.TabIndex = 44;
             // 
             // cmbNhanVien
             // 
             this.cmbNhanVien.FormattingEnabled = true;
-            this.cmbNhanVien.Location = new System.Drawing.Point(197, 57);
+            this.cmbNhanVien.Location = new System.Drawing.Point(148, 46);
+            this.cmbNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbNhanVien.Name = "cmbNhanVien";
-            this.cmbNhanVien.Size = new System.Drawing.Size(331, 28);
+            this.cmbNhanVien.Size = new System.Drawing.Size(249, 25);
             this.cmbNhanVien.TabIndex = 43;
             // 
             // cmbBoPhan
             // 
             this.cmbBoPhan.FormattingEnabled = true;
-            this.cmbBoPhan.Location = new System.Drawing.Point(197, 20);
+            this.cmbBoPhan.Location = new System.Drawing.Point(148, 16);
+            this.cmbBoPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbBoPhan.Name = "cmbBoPhan";
-            this.cmbBoPhan.Size = new System.Drawing.Size(331, 28);
+            this.cmbBoPhan.Size = new System.Drawing.Size(249, 25);
             this.cmbBoPhan.TabIndex = 42;
             this.cmbBoPhan.SelectedIndexChanged += new System.EventHandler(this.cmbBoPhan_SelectedIndexChanged);
             // 
@@ -96,9 +101,10 @@ namespace Project2.Features
             // 
             this.lblChucDanh.AutoSize = true;
             this.lblChucDanh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChucDanh.Location = new System.Drawing.Point(99, 100);
+            this.lblChucDanh.Location = new System.Drawing.Point(74, 81);
+            this.lblChucDanh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblChucDanh.Name = "lblChucDanh";
-            this.lblChucDanh.Size = new System.Drawing.Size(78, 18);
+            this.lblChucDanh.Size = new System.Drawing.Size(66, 14);
             this.lblChucDanh.TabIndex = 41;
             this.lblChucDanh.Text = "Chức danh";
             // 
@@ -106,9 +112,10 @@ namespace Project2.Features
             // 
             this.lblNhanVien.AutoSize = true;
             this.lblNhanVien.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhanVien.Location = new System.Drawing.Point(99, 67);
+            this.lblNhanVien.Location = new System.Drawing.Point(74, 54);
+            this.lblNhanVien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(73, 18);
+            this.lblNhanVien.Size = new System.Drawing.Size(61, 14);
             this.lblNhanVien.TabIndex = 40;
             this.lblNhanVien.Text = "Nhân viên";
             // 
@@ -116,9 +123,10 @@ namespace Project2.Features
             // 
             this.lblBoPhan.AutoSize = true;
             this.lblBoPhan.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoPhan.Location = new System.Drawing.Point(99, 30);
+            this.lblBoPhan.Location = new System.Drawing.Point(74, 24);
+            this.lblBoPhan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBoPhan.Name = "lblBoPhan";
-            this.lblBoPhan.Size = new System.Drawing.Size(62, 18);
+            this.lblBoPhan.Size = new System.Drawing.Size(52, 14);
             this.lblBoPhan.TabIndex = 39;
             this.lblBoPhan.Text = "Bộ phận";
             // 
@@ -126,9 +134,10 @@ namespace Project2.Features
             // 
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(11, 213);
+            this.btnThem.Location = new System.Drawing.Point(8, 173);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(130, 38);
+            this.btnThem.Size = new System.Drawing.Size(98, 31);
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -138,9 +147,10 @@ namespace Project2.Features
             // 
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Location = new System.Drawing.Point(352, 213);
+            this.btnCapNhat.Location = new System.Drawing.Point(264, 173);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(130, 38);
+            this.btnCapNhat.Size = new System.Drawing.Size(98, 31);
             this.btnCapNhat.TabIndex = 2;
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -150,9 +160,10 @@ namespace Project2.Features
             // 
             this.btnHuybo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuybo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuybo.Location = new System.Drawing.Point(527, 213);
+            this.btnHuybo.Location = new System.Drawing.Point(395, 173);
+            this.btnHuybo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuybo.Name = "btnHuybo";
-            this.btnHuybo.Size = new System.Drawing.Size(130, 38);
+            this.btnHuybo.Size = new System.Drawing.Size(98, 31);
             this.btnHuybo.TabIndex = 3;
             this.btnHuybo.Text = "Hủy Bỏ";
             this.btnHuybo.UseVisualStyleBackColor = true;
@@ -162,9 +173,10 @@ namespace Project2.Features
             // 
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(183, 213);
+            this.btnSua.Location = new System.Drawing.Point(137, 173);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(130, 38);
+            this.btnSua.Size = new System.Drawing.Size(98, 31);
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -174,9 +186,10 @@ namespace Project2.Features
             // 
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(699, 213);
+            this.btnXoa.Location = new System.Drawing.Point(524, 173);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(130, 38);
+            this.btnXoa.Size = new System.Drawing.Size(98, 31);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -192,31 +205,15 @@ namespace Project2.Features
             this.TenChucDanh,
             this.TenNV,
             this.TenBoPhan});
-            this.grdChucVu.Location = new System.Drawing.Point(11, 267);
+            this.grdChucVu.Location = new System.Drawing.Point(8, 217);
+            this.grdChucVu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grdChucVu.Name = "grdChucVu";
             this.grdChucVu.ReadOnly = true;
             this.grdChucVu.RowHeadersWidth = 51;
             this.grdChucVu.RowTemplate.Height = 24;
-            this.grdChucVu.Size = new System.Drawing.Size(818, 200);
+            this.grdChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdChucVu.Size = new System.Drawing.Size(614, 162);
             this.grdChucVu.TabIndex = 6;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(786, 6);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(60, 49);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // TenChucDanh
             // 
@@ -245,11 +242,30 @@ namespace Project2.Features
             this.TenBoPhan.ReadOnly = true;
             this.TenBoPhan.Width = 235;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(590, 5);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(45, 40);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // ChucVu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 478);
+            this.ClientSize = new System.Drawing.Size(632, 388);
             this.ControlBox = false;
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.grdChucVu);
@@ -260,9 +276,11 @@ namespace Project2.Features
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChucVu";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Text = "Chức Vụ";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;

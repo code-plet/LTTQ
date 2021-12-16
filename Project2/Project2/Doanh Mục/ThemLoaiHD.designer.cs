@@ -56,9 +56,10 @@ namespace Project2.Features
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(576, 7);
+            this.btnLogout.Location = new System.Drawing.Point(432, 6);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(60, 49);
+            this.btnLogout.Size = new System.Drawing.Size(45, 40);
             this.btnLogout.TabIndex = 10;
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -68,9 +69,10 @@ namespace Project2.Features
             // 
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(550, 177);
+            this.btnXoa.Location = new System.Drawing.Point(412, 144);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(77, 38);
+            this.btnXoa.Size = new System.Drawing.Size(58, 31);
             this.btnXoa.TabIndex = 22;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -80,9 +82,10 @@ namespace Project2.Features
             // 
             this.btnHuybo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuybo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuybo.Location = new System.Drawing.Point(425, 177);
+            this.btnHuybo.Location = new System.Drawing.Point(319, 144);
+            this.btnHuybo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuybo.Name = "btnHuybo";
-            this.btnHuybo.Size = new System.Drawing.Size(77, 38);
+            this.btnHuybo.Size = new System.Drawing.Size(58, 31);
             this.btnHuybo.TabIndex = 21;
             this.btnHuybo.Text = "Hủy Bỏ";
             this.btnHuybo.UseVisualStyleBackColor = true;
@@ -92,9 +95,10 @@ namespace Project2.Features
             // 
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Location = new System.Drawing.Point(269, 176);
+            this.btnCapNhat.Location = new System.Drawing.Point(202, 143);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(106, 38);
+            this.btnCapNhat.Size = new System.Drawing.Size(80, 31);
             this.btnCapNhat.TabIndex = 20;
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -104,9 +108,10 @@ namespace Project2.Features
             // 
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(138, 176);
+            this.btnSua.Location = new System.Drawing.Point(104, 143);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(77, 38);
+            this.btnSua.Size = new System.Drawing.Size(58, 31);
             this.btnSua.TabIndex = 19;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -116,9 +121,10 @@ namespace Project2.Features
             // 
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(6, 176);
+            this.btnThem.Location = new System.Drawing.Point(4, 143);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(77, 38);
+            this.btnThem.Size = new System.Drawing.Size(58, 31);
             this.btnThem.TabIndex = 18;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -129,27 +135,31 @@ namespace Project2.Features
             this.groupBox1.Controls.Add(this.txtLoaiHopDong);
             this.groupBox1.Controls.Add(this.lblTinhThanh);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 72);
+            this.groupBox1.Location = new System.Drawing.Point(4, 58);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(621, 98);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(466, 80);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin";
             // 
             // txtLoaiHopDong
             // 
-            this.txtLoaiHopDong.Location = new System.Drawing.Point(158, 33);
+            this.txtLoaiHopDong.Location = new System.Drawing.Point(118, 27);
+            this.txtLoaiHopDong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLoaiHopDong.Name = "txtLoaiHopDong";
-            this.txtLoaiHopDong.Size = new System.Drawing.Size(286, 27);
+            this.txtLoaiHopDong.Size = new System.Drawing.Size(216, 23);
             this.txtLoaiHopDong.TabIndex = 2;
             // 
             // lblTinhThanh
             // 
             this.lblTinhThanh.AutoSize = true;
             this.lblTinhThanh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTinhThanh.Location = new System.Drawing.Point(79, 42);
+            this.lblTinhThanh.Location = new System.Drawing.Point(59, 34);
+            this.lblTinhThanh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTinhThanh.Name = "lblTinhThanh";
-            this.lblTinhThanh.Size = new System.Drawing.Size(73, 18);
+            this.lblTinhThanh.Size = new System.Drawing.Size(62, 14);
             this.lblTinhThanh.TabIndex = 1;
             this.lblTinhThanh.Text = "Hợp Đồng";
             // 
@@ -162,12 +172,14 @@ namespace Project2.Features
             this.grdThemHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDLoaiHD,
             this.TenHD});
-            this.grdThemHD.Location = new System.Drawing.Point(6, 221);
+            this.grdThemHD.Location = new System.Drawing.Point(4, 180);
+            this.grdThemHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grdThemHD.Name = "grdThemHD";
             this.grdThemHD.ReadOnly = true;
             this.grdThemHD.RowHeadersWidth = 51;
             this.grdThemHD.RowTemplate.Height = 24;
-            this.grdThemHD.Size = new System.Drawing.Size(621, 150);
+            this.grdThemHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdThemHD.Size = new System.Drawing.Size(466, 122);
             this.grdThemHD.TabIndex = 23;
             // 
             // IDLoaiHD
@@ -190,9 +202,9 @@ namespace Project2.Features
             // 
             // ThemLoaiHD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 383);
+            this.ClientSize = new System.Drawing.Size(476, 311);
             this.ControlBox = false;
             this.Controls.Add(this.grdThemHD);
             this.Controls.Add(this.btnXoa);
@@ -203,7 +215,9 @@ namespace Project2.Features
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLogout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ThemLoaiHD";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Thêm Loại Hợp Đồng";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
