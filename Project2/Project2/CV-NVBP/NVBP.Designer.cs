@@ -59,7 +59,7 @@ namespace Project2.Features
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.Location = new System.Drawing.Point(564, 4);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(45, 40);
             this.btnLogout.TabIndex = 8;
@@ -75,9 +75,9 @@ namespace Project2.Features
             this.groupBox1.Controls.Add(this.lblTenNhanVien);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(7, 58);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(592, 93);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -87,7 +87,7 @@ namespace Project2.Features
             // 
             this.cmbBoPhan.FormattingEnabled = true;
             this.cmbBoPhan.Location = new System.Drawing.Point(174, 60);
-            this.cmbBoPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbBoPhan.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBoPhan.Name = "cmbBoPhan";
             this.cmbBoPhan.Size = new System.Drawing.Size(258, 25);
             this.cmbBoPhan.TabIndex = 42;
@@ -96,7 +96,7 @@ namespace Project2.Features
             // 
             this.cmbTenNV.FormattingEnabled = true;
             this.cmbTenNV.Location = new System.Drawing.Point(174, 23);
-            this.cmbTenNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTenNV.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTenNV.Name = "cmbTenNV";
             this.cmbTenNV.Size = new System.Drawing.Size(258, 25);
             this.cmbTenNV.TabIndex = 41;
@@ -128,7 +128,7 @@ namespace Project2.Features
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Location = new System.Drawing.Point(7, 157);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(98, 31);
             this.btnThem.TabIndex = 10;
@@ -141,7 +141,7 @@ namespace Project2.Features
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Location = new System.Drawing.Point(132, 157);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(98, 31);
             this.btnSua.TabIndex = 11;
@@ -154,7 +154,7 @@ namespace Project2.Features
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapNhat.Location = new System.Drawing.Point(257, 157);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(98, 31);
             this.btnCapNhat.TabIndex = 12;
@@ -167,7 +167,7 @@ namespace Project2.Features
             this.btnHuybo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuybo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuybo.Location = new System.Drawing.Point(380, 157);
-            this.btnHuybo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuybo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuybo.Name = "btnHuybo";
             this.btnHuybo.Size = new System.Drawing.Size(98, 31);
             this.btnHuybo.TabIndex = 13;
@@ -180,7 +180,7 @@ namespace Project2.Features
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Location = new System.Drawing.Point(501, 157);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(98, 31);
             this.btnXoa.TabIndex = 14;
@@ -198,11 +198,12 @@ namespace Project2.Features
             this.TenBoPhan,
             this.TenNV});
             this.grdBoPhan.Location = new System.Drawing.Point(7, 200);
-            this.grdBoPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdBoPhan.Margin = new System.Windows.Forms.Padding(2);
             this.grdBoPhan.Name = "grdBoPhan";
             this.grdBoPhan.ReadOnly = true;
             this.grdBoPhan.RowHeadersWidth = 51;
             this.grdBoPhan.RowTemplate.Height = 24;
+            this.grdBoPhan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdBoPhan.Size = new System.Drawing.Size(592, 162);
             this.grdBoPhan.TabIndex = 15;
             // 
@@ -224,7 +225,7 @@ namespace Project2.Features
             this.TenNV.ReadOnly = true;
             this.TenNV.Width = 260;
             // 
-            // BoPhan
+            // NVBP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,9 +240,9 @@ namespace Project2.Features
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLogout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "BoPhan";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "NVBP";
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Style = MetroFramework.MetroColorStyle.Blue;
             this.Text = "Nhân Viên - Bộ Phận";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;

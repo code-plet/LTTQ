@@ -275,6 +275,7 @@ namespace Project2.Features
             this.grdNguoiDung.ReadOnly = true;
             this.grdNguoiDung.RowHeadersWidth = 51;
             this.grdNguoiDung.RowTemplate.Height = 24;
+            this.grdNguoiDung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdNguoiDung.Size = new System.Drawing.Size(693, 253);
             this.grdNguoiDung.TabIndex = 6;
             this.grdNguoiDung.SelectionChanged += new System.EventHandler(this.grdNguoiDung_SelectionChanged);

@@ -51,7 +51,6 @@
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNop = new DevExpress.XtraEditors.SimpleButton();
             this.ChamCongGrid = new System.Windows.Forms.DataGridView();
             this.grbThongTinChamCong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -208,18 +207,6 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // btnNop
-            // 
-            this.btnNop.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNop.Appearance.Options.UseFont = true;
-            this.btnNop.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNop.ImageOptions.Image")));
-            this.btnNop.Location = new System.Drawing.Point(944, 338);
-            this.btnNop.Name = "btnNop";
-            this.btnNop.Size = new System.Drawing.Size(122, 37);
-            this.btnNop.TabIndex = 51;
-            this.btnNop.Text = "Nộp";
-            this.btnNop.Click += new System.EventHandler(this.btnNop_Click);
-            // 
             // ChamCongGrid
             // 
             this.ChamCongGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -235,7 +222,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 387);
             this.Controls.Add(this.ChamCongGrid);
-            this.Controls.Add(this.btnNop);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.grbThongTinChamCong);
             this.Name = "frmChamCong";
@@ -270,7 +256,6 @@
         private System.Windows.Forms.Label lblThang;
         private System.Windows.Forms.Label lblBoPhan;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
-        private DevExpress.XtraEditors.SimpleButton btnNop;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItems;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox2;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

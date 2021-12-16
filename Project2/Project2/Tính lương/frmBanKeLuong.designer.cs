@@ -35,7 +35,6 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnTinhLuong = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNop = new DevExpress.XtraEditors.SimpleButton();
             this.BanKeLuongGrid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanKeLuongGrid)).BeginInit();
@@ -83,15 +82,6 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // btnNop
-            // 
-            this.btnNop.Location = new System.Drawing.Point(622, 12);
-            this.btnNop.Name = "btnNop";
-            this.btnNop.Size = new System.Drawing.Size(117, 35);
-            this.btnNop.TabIndex = 55;
-            this.btnNop.Text = "Nộp";
-            this.btnNop.Click += new System.EventHandler(this.btnNop_Click);
-            // 
             // BanKeLuongGrid
             // 
             this.BanKeLuongGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -107,7 +97,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 315);
             this.Controls.Add(this.BanKeLuongGrid);
-            this.Controls.Add(this.btnNop);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnTinhLuong);
             this.Controls.Add(this.dtpThang);
@@ -132,7 +121,6 @@
         private DevExpress.XtraEditors.SimpleButton btnTinhLuong;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
-        private DevExpress.XtraEditors.SimpleButton btnNop;
         private System.Windows.Forms.DataGridView BanKeLuongGrid;
     }
 }

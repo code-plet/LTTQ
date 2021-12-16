@@ -47,8 +47,8 @@ namespace Project2
         {
             try
             {
-                string sql = @"select a.BoPhanID, a.NhanVienID, b.MaNV, b.TenNV, c.ChamCongID,c.NgayChamCong, c.NgayCongChuan,c.NgayDiLam,c.NgayKhongLuong, c.NgayNghiLe, c.NgayNghiPhepTinhLuong, c.NgayTinhLuong,
-		                    c.ChamCongID, c.GhiChu, c.TrangThai, c.Thang
+                string sql = @"select a.NhanVienID as 'Mã Nhân Viên', b.TenNV as 'Tên Nhân Viên', c.NgayCongChuan as 'Ngày Công Chuẩn', c.NgayDiLam as 'Ngày Đi Làm', c.NgayNghiLe as 'Ngày Nghỉ Lễ', c.NgayNghiPhepTinhLuong as 'Ngày N.P Tính Lương', c.NgayKhongLuong as 'Ngày Không Lương', c.NgayTinhLuong as 'Ngày Tính Lương', c.NgayChamCong as 'Ngày Chấm Công',
+		                     c.GhiChu as 'Ghi Chú', c.TrangThai as 'Ghi Chú'
                             from NhanVienBoPhan a inner join NhanVien b on a.NhanVienID = b.NhanVienID
                             left join ChamCong c on c.BoPhanID = a.BoPhanID and c.NhanVienID = a.NhanVienID and c.Thang = '" + dtpThang.Value.ToString("yyyyMM") + @"'
                             Where a.BoPhanID = '" + cmbBoPhan.SelectedValue + "'";

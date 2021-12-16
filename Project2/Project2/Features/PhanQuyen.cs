@@ -143,6 +143,14 @@ namespace Project2.Features
                 }
                 
             }
+            else
+            {
+                cbQLHT.Checked = false;
+                cbQLDanhMuc.Checked = false;
+                cbQLNhanSu.Checked = false;
+                cbQLTienLuong.Checked = false;
+                cbTKBaoCao.Checked = false;
+            }
         }
     }
 }

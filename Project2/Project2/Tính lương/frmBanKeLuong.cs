@@ -49,10 +49,9 @@ namespace Project2
             {
 
                 string time = dtpThang.Value.Year.ToString() + dtpThang.Value.Month.ToString("D2");
-                string sql = @"select a.NhanVienID , a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên', b.TamUng as 'Tạm Ứng', b.ThangTamUng as 'Tháng tạm Ứng', c.NgayCongChuan as 'Ngày Công Chuẩn', c.ThangKeLuong,
-                                c.TrangThai as 'Trạng Thái', c.ChiTietBanKeLuongID, c.ThueThuNhapCaNhan, c.NgayTinhLuong as 'Ngày Tính Lương', f.TienLuongCung as 'Tiền Lương Cứng', f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', g.HieuSuat as 'Hiệu Suất',
-                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương',
-                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng as 'Thực Lĩnh' 
+                string sql = @"select a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên',f.TienLuongCung as 'Tiền Lương Cứng',g.HieuSuat as 'Hiệu Suất',c.NgayCongChuan as 'Ngày Công Chuẩn',c.NgayTinhLuong as 'Ngày Tính Lương',f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', b.TamUng as 'Tạm Ứng',  c.ThangKeLuong,
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng as 'Thực Lĩnh',
+                                f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương'
                             From NhanVien a 
                             inner join ChiTietTamUng b on a.NhanVienID = b.NhanVienID and b.ThangTamUng = '" + time + @"'
                             inner join NhanVienChucDanh d on a.NhanVienID = d.NhanVienID

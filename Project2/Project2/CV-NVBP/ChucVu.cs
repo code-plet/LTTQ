@@ -170,8 +170,6 @@ namespace Project2.Features
             if (r == DialogResult.OK)
             {
                 this.Close();
-                CVBPMenu cVBP = new CVBPMenu();
-                cVBP.Show();
             }
         }
     }
