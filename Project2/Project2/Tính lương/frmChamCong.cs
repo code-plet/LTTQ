@@ -47,8 +47,8 @@ namespace Project2
         {
             try
             {
-                string sql = @"select a.NhanVienID as 'Mã Nhân Viên', b.TenNV as 'Tên Nhân Viên', c.NgayCongChuan as 'Ngày Công Chuẩn', c.NgayDiLam as 'Ngày Đi Làm', c.NgayNghiLe as 'Ngày Nghỉ Lễ', c.NgayNghiPhepTinhLuong as 'Ngày N.P Tính Lương', c.NgayKhongLuong as 'Ngày Không Lương', c.NgayTinhLuong as 'Ngày Tính Lương', c.NgayChamCong as 'Ngày Chấm Công',
-		                     c.GhiChu as 'Ghi Chú', c.TrangThai as 'Ghi Chú'
+                string sql = @"select c.ChamCongID as 'Mã Chấm Công', a.NhanVienID as 'Mã Nhân Viên', b.TenNV as 'Tên Nhân Viên', c.NgayCongChuan as 'Ngày Công Chuẩn', c.NgayDiLam as 'Ngày Đi Làm', c.NgayNghiLe as 'Ngày Nghỉ Lễ', c.NgayNghiPhepTinhLuong as 'Ngày N.P Tính Lương', c.NgayKhongLuong as 'Ngày Không Lương', c.NgayTinhLuong as 'Ngày Tính Lương', c.NgayChamCong as 'Ngày Chấm Công',
+		                     c.GhiChu as 'Ghi Chú', c.TrangThai as 'Trạng Thái', c.Thang as 'Tháng'
                             from NhanVienBoPhan a inner join NhanVien b on a.NhanVienID = b.NhanVienID
                             left join ChamCong c on c.BoPhanID = a.BoPhanID and c.NhanVienID = a.NhanVienID and c.Thang = '" + dtpThang.Value.ToString("yyyyMM") + @"'
                             Where a.BoPhanID = '" + cmbBoPhan.SelectedValue + "'";
@@ -72,18 +72,18 @@ namespace Project2
                 DataGridViewCellCollection Cells = rows[i].Cells;
                 if (Cells != null)
                 {
-                    string ChamCongID = Cells["ChamCongID"].Value.ToString();
-                    int NgayCongChuan = Convert.ToInt32(Cells["NgayCongChuan"].Value.ToString());
-                    int NhanVienID = Convert.ToInt32(Cells["NhanVienID"].Value.ToString());
-                    int NgayDiLam = Convert.ToInt32(Cells["NgayDiLam"].Value.ToString());
-                    int NgayNghiLe = Convert.ToInt32(Cells["NgayNghiLe"].Value.ToString());
-                    int NgayNghiPhepTinhLuong = Convert.ToInt32(Cells["NgayNghiPhepTinhLuong"].Value.ToString());
-                    int NgayKhongLuong = Convert.ToInt32(Cells["NgayKhongLuong"].Value.ToString());
-                    int NgayTinhLuong = Convert.ToInt32(Cells["NgayTinhLuong"].Value.ToString());
-                    int NgayChamCong = Convert.ToInt32(Cells["NgayChamCong"].Value.ToString());
-                    string GhiChu = Cells["GhiChu"].Value.ToString();
+                    string ChamCongID = Cells["Mã Chấm Công"].Value.ToString();
+                    int NgayCongChuan = Convert.ToInt32(Cells["Ngày Công Chuẩn"].Value.ToString());
+                    int NhanVienID = Convert.ToInt32(Cells["Mã Nhân Viên"].Value.ToString());
+                    int NgayDiLam = Convert.ToInt32(Cells["Ngày Đi Làm"].Value.ToString());
+                    int NgayNghiLe = Convert.ToInt32(Cells["Ngày Nghỉ Lễ"].Value.ToString());
+                    int NgayNghiPhepTinhLuong = Convert.ToInt32(Cells["Ngày N.P Tính Lương"].Value.ToString());
+                    int NgayKhongLuong = Convert.ToInt32(Cells["Ngày Không Lương"].Value.ToString());
+                    int NgayTinhLuong = Convert.ToInt32(Cells["Ngày Tính Lương"].Value.ToString());
+                    int NgayChamCong = Convert.ToInt32(Cells["Ngày Chấm Công"].Value.ToString());
+                    string GhiChu = Cells["Ghi Chú"].Value.ToString();
 
-                    string TrangThai = Cells["TrangThai"].Value.ToString();
+                    string TrangThai = Cells["Trạng Thái"].Value.ToString();
 
                     if (ChamCongID == "")
                     {
@@ -163,25 +163,25 @@ namespace Project2
                 {
                     int dem = 0;
                     DataGridViewRowCollection rows = ChamCongGrid.Rows;
-                    for (int i = 0; i < ChamCongGrid.RowCount - 1; i++)
+                    for (int i = 0; i < rows.Count -1; i++)
                     {
                         DataGridViewCellCollection Cells = rows[i].Cells;
                         if (Cells != null)
                         {
-                            if (Cells["TrangThai"].ToString() == "1")
+                            if (Cells["Trạng Thái"].Value.ToString() == "1")
                             {
 
-                                string ChamCongID = Cells["ChamCongID"].ToString();
+                                string ChamCongID = Cells["Mã Chấm Công"].Value.ToString();
 
                                 string sql = @"Update ChamCong Set TrangThai = 2 where ChamCongID = '" + ChamCongID + "'";
                                 db.Execute(sql);
                                 dem++;
 
                                 // insert sang bảng ChiTietBanKeLuong
-                                string ThangKeLuong = Cells["Thang"].ToString();
-                                string NhanVienID = Cells["NhanVienID"].ToString();
-                                string NgayCongChuan = Cells["NgayCongChuan"].ToString();
-                                string NgayTinhLuong = Cells["NgayTinhLuong"].ToString();
+                                string ThangKeLuong = Cells["Tháng"].Value.ToString();
+                                string NhanVienID = Cells["Mã Nhân Viên"].Value.ToString();
+                                string NgayCongChuan = Cells["Ngày Công Chuẩn"].Value.ToString();
+                                string NgayTinhLuong = Cells["Ngày Tính Lương"].Value.ToString();
 
                                 sql = @"INSERT INTO [dbo].[ChiTietBanKeLuong]
                                            ([ThangKeLuong]

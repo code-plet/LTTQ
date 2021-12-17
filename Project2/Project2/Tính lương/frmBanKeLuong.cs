@@ -49,7 +49,7 @@ namespace Project2
             {
 
                 string time = dtpThang.Value.Year.ToString() + dtpThang.Value.Month.ToString("D2");
-                string sql = @"select a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên',f.TienLuongCung as 'Tiền Lương Cứng',g.HieuSuat as 'Hiệu Suất',c.NgayCongChuan as 'Ngày Công Chuẩn',c.NgayTinhLuong as 'Ngày Tính Lương',f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', b.TamUng as 'Tạm Ứng',  c.ThangKeLuong,
+                /*string sql = @"select a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên',f.TienLuongCung as 'Tiền Lương Cứng',g.HieuSuat as 'Hiệu Suất',c.NgayCongChuan as 'Ngày Công Chuẩn',c.NgayTinhLuong as 'Ngày Tính Lương',f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', b.TamUng as 'Tạm Ứng',  c.ThangKeLuong,
                                 f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) - b.TamUng as 'Thực Lĩnh',
                                 f.TienLuongCung * g.HieuSuat * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương'
                             From NhanVien a 
@@ -57,6 +57,13 @@ namespace Project2
                             inner join NhanVienChucDanh d on a.NhanVienID = d.NhanVienID
                             inner join LuongChucDanh f on f.ChucDanhID = d.ChucDanhID
                             inner join DanhGiaHieuSuat g on g.NhanVienID = a.NhanVienID and g.Thang = '" + time + @"'
+                            left join ChiTietBanKeLuong c on c.NhanVienID = a.NhanVienID and  c.ThangKeLuong = '" + time + "'";*/
+                string sql = @"select a.MaNV as 'Mã Nhân Viên', a.TenNV as 'Tên Nhân Viên',f.TienLuongCung as 'Tiền Lương Cứng',c.NgayCongChuan as 'Ngày Công Chuẩn',c.NgayTinhLuong as 'Ngày Tính Lương',f.PhuCap*f.TienLuongCung/100 as 'Phụ Cấp', c.ThangKeLuong,
+                                f.TienLuongCung * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2) ) as 'Thực Lĩnh',
+                                f.TienLuongCung * (Round((CONVERT(float, c.NgayTinhLuong)/CONVERT(float,c.NgayCongChuan)),2)) as 'Tổng Lương'
+                            From NhanVien a 
+                            inner join NhanVienChucDanh d on a.NhanVienID = d.NhanVienID
+                            inner join LuongChucDanh f on f.ChucDanhID = d.ChucDanhID
                             left join ChiTietBanKeLuong c on c.NhanVienID = a.NhanVienID and  c.ThangKeLuong = '" + time + "'";
                 DataTable dt = db.Read(sql);
                 bindingSource1.DataSource = dt;

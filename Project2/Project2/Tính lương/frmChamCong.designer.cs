@@ -52,6 +52,7 @@
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.ChamCongGrid = new System.Windows.Forms.DataGridView();
+            this.btnNop = new DevExpress.XtraEditors.SimpleButton();
             this.grbThongTinChamCong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgayCongChuan)).BeginInit();
@@ -216,11 +217,24 @@
             this.ChamCongGrid.Size = new System.Drawing.Size(1054, 248);
             this.ChamCongGrid.TabIndex = 52;
             // 
+            // btnNop
+            // 
+            this.btnNop.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNop.Appearance.Options.UseFont = true;
+            this.btnNop.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNop.ImageOptions.Image")));
+            this.btnNop.Location = new System.Drawing.Point(900, 338);
+            this.btnNop.Name = "btnNop";
+            this.btnNop.Size = new System.Drawing.Size(122, 37);
+            this.btnNop.TabIndex = 53;
+            this.btnNop.Text = "Nộp";
+            this.btnNop.Click += new System.EventHandler(this.btnNop_Click);
+            // 
             // frmChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 387);
+            this.Controls.Add(this.btnNop);
             this.Controls.Add(this.ChamCongGrid);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.grbThongTinChamCong);
@@ -273,5 +287,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtGhiChu;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private System.Windows.Forms.DataGridView ChamCongGrid;
+        private DevExpress.XtraEditors.SimpleButton btnNop;
     }
 }
