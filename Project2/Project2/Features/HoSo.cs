@@ -128,7 +128,7 @@ namespace Project2.Features
             dtpNgaySinh.Enabled = true;
             txtEmail.Enabled = true;
             txtDiaChi.Enabled = true;
-            txtMaNV.Enabled = true;
+            txtMaNV.Enabled = false;
             txtSoCMND.Enabled = true;
             txtSDT.Enabled = true;
             txtTenNV.Enabled = true;
@@ -139,6 +139,9 @@ namespace Project2.Features
         {
             if (kt == 1)
             {
+                string sql1 = "select * from NhanVien where MaNV = '" + txtMaNV.Text + "'";
+                DataTable dt = database.Read(sql1);
+               
                 if (txtMaNV.Text == "" || txtTenNV.Text == "" || txtDiaChi.Text == "" || txtEmail.Text == "" || txtSoCMND.Text == "" || txtSDT.Text == "")
                 {
                     MessageBox.Show("Bạn chưa nhập 1 số thông tin cần nhập", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -146,6 +149,10 @@ namespace Project2.Features
                 else if (txtMaNV.Text.Length >= 8)
                 {
                     MessageBox.Show("Bạn không được nhập Mã nhân viên quá 8 ký tự", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (dt != null)
+                {
+                    MessageBox.Show("Không được nhập trùng mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {

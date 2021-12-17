@@ -123,7 +123,7 @@ namespace Project2.Features
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             btnHuybo.Enabled = true;
-            txtMaHopDong.Enabled = true;
+            txtMaHopDong.Enabled = false;
             cbTrangThai.Enabled = true;
         }
 
@@ -144,15 +144,26 @@ namespace Project2.Features
         {
             if (kt == 1)
             {
-                string sql = "Insert into HopDong( MaHopDong, LoaiHopDongID, NgayKy, NgayHieuLuc, NgayHetHan, NhanVienID, NgayKetThuc, TrangThai) values ('" + txtMaHopDong.Text + "', '" + cmbTenLoaiHopDong.SelectedValue + "', '" + dtpNgayKy.Value + "', '" + dtpNgayHieuLuc.Value + "', '" + dtpNgayHetHan.Value + "', '" + cmbNhanVien.SelectedValue + "', '" + dtpNgayKetThuc.Value + "', '" + cbTrangThai.Checked + "')";
-                if (database.Execute(sql) == false)
+                string sql1 = "select * from HopDong where MaHopDong = '" + txtMaHopDong.Text + "'";
+                DataTable dt = database.Read(sql1);
+                if (dt != null)
                 {
-                    MessageBox.Show("Lỗi khi thêm mới", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                    MessageBox.Show("Không được nhập trùng mã hợp đồng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                } 
                 else
                 {
-                    Load_DL();
-                }
+                    string sql = "Insert into HopDong( MaHopDong, LoaiHopDongID, NgayKy, NgayHieuLuc, NgayHetHan, NhanVienID, NgayKetThuc, TrangThai) values ('" + txtMaHopDong.Text + "', '" + cmbTenLoaiHopDong.SelectedValue + "', '" + dtpNgayKy.Value + "', '" + dtpNgayHieuLuc.Value + "', '" + dtpNgayHetHan.Value + "', '" + cmbNhanVien.SelectedValue + "', '" + dtpNgayKetThuc.Value + "', '" + cbTrangThai.Checked + "')";
+
+                    if (database.Execute(sql) == false)
+                    {
+                        MessageBox.Show("Lỗi khi thêm mới", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        Load_DL();
+                    }
+                }    
+                                  
             }
             else
             {
