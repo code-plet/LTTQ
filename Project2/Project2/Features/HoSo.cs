@@ -143,13 +143,21 @@ namespace Project2.Features
                 {
                     MessageBox.Show("Bạn chưa nhập 1 số thông tin cần nhập", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
+                string sql = @"select * from NhanVien where NhanVien.MaNV = '" + txtMaNV.Text + "'";
+                Database db = new Database();
+                DataTable dt = db.Read(sql);
+                if(dt.Rows.Count != 0)
+                {
+                    MessageBox.Show("Mã Nhân Viên bị trùng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 else if (txtMaNV.Text.Length >= 8)
                 {
                     MessageBox.Show("Bạn không được nhập Mã nhân viên quá 8 ký tự", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    string sql = "Insert into NhanVien(MaNV, TenNV, NgaySinh, GioiTinhID, SDT, SoCMND, Email, DiaChi, TrangThaiID) values ('" + txtMaNV.Text + "', N'" + txtTenNV.Text + "', '" + dtpNgaySinh.Value.ToString("yyyy-MM-dd") + "', '" + cmbGioiTinh.SelectedValue + "', '" + txtSDT.Text + "', '" + txtSoCMND.Text + "' , '" + txtEmail.Text + "', N'" + txtDiaChi.Text + "', '" + cbTrangThaiID.Checked + "')";
+                    sql = "Insert into NhanVien(MaNV, TenNV, NgaySinh, GioiTinhID, SDT, SoCMND, Email, DiaChi, TrangThaiID) values ('" + txtMaNV.Text + "', N'" + txtTenNV.Text + "', '" + dtpNgaySinh.Value.ToString("yyyy-MM-dd") + "', '" + cmbGioiTinh.SelectedValue + "', '" + txtSDT.Text + "', '" + txtSoCMND.Text + "' , '" + txtEmail.Text + "', N'" + txtDiaChi.Text + "', '" + cbTrangThaiID.Checked + "')";
                     if (database.Execute(sql) == false)
                     {
                         MessageBox.Show("Lỗi khi thêm mới");
