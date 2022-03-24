@@ -11,8 +11,13 @@ namespace Project2
 {
     class Database
     {
-        SqlConnection ketnoi = new SqlConnection(@"Server = .\SQLEXPRESS;Database=HRM_VTHP;Integrated Security=SSPI");
+        //SqlConnection ketnoi = new SqlConnection(@"Server = .\DESKTOP-T8E0TN4;Database=HRM_VTHP;Integrated Security=SSPI");
+        SqlConnection ketnoi = new SqlConnection("Data Source=DESKTOP-T8E0TN4;" +
+                  "Initial Catalog=HRM_VTHP;" +
+                  "Integrated Security=SSPI;"
 
+
+                  );
         public bool Execute(string cmd)
         {
             bool check = false;

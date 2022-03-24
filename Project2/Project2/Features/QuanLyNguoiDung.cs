@@ -31,6 +31,10 @@ namespace Project2.Features
                             inner join NhanVienBoPhan c on a.NhanVienID = c.NhanVienID
                             inner join BoPhan d on d.BoPhanID = c.BoPhanID";
             dt = database.Read(sql);
+            foreach (DataRow dr in dt.Rows)
+            {
+                dr["MatKhau"] = DuLieu.Security.DecryptMd5(dr["MatKhau"].ToString());
+            }
             grdNguoiDung.DataSource = dt;
 
             currentRow = BindingContext[dt];
