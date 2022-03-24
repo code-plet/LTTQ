@@ -149,7 +149,7 @@ namespace Project2.Features
 
                 string sql = @"select * from NhanVien where NhanVien.MaNV = '" + txtMaNV.Text + "'";
                 Database db = new Database();
-                DataTable dt = db.Read(sql);
+                dt = db.Read(sql);
                 if(dt.Rows.Count != 0)
                 {
                     MessageBox.Show("Mã Nhân Viên bị trùng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
